@@ -1,0 +1,150 @@
+{
+  "layouts": [
+    {
+      "path": "/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/haber/2026/10/kentlerde-ulasimin-yeni-rotasi-rayli-sistem-ve-yaya-odakli-planlama/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/kategori/gundem/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/arama/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/hakkimizda/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/yonetim/",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/404.html",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/haber/2026/10/kentlerde-ulasimin-yeni-rotasi-rayli-sistem-ve-yaya-odakli-planlama/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/kategori/gundem/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/arama/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/hakkimizda/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/yonetim/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/404.html",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/haber/2026/10/kentlerde-ulasimin-yeni-rotasi-rayli-sistem-ve-yaya-odakli-planlama/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/kategori/gundem/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/arama/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/hakkimizda/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/yonetim/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "path": "/404.html",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "accessibility": [
+    {
+      "name": "home",
+      "size": "desktop",
+      "violations": []
+    },
+    {
+      "name": "home",
+      "size": "mobile",
+      "violations": []
+    },
+    {
+      "name": "article",
+      "size": "desktop",
+      "violations": []
+    },
+    {
+      "name": "article",
+      "size": "mobile",
+      "violations": []
+    }
+  ],
+  "javascriptOff": [
+    {
+      "path": "/",
+      "contentVisible": true,
+      "keyboardMenu": true
+    },
+    {
+      "path": "/haber/2026/10/kentlerde-ulasimin-yeni-rotasi-rayli-sistem-ve-yaya-odakli-planlama/",
+      "contentVisible": true,
+      "keyboardMenu": true
+    },
+    {
+      "path": "/kategori/gundem/",
+      "contentVisible": true,
+      "keyboardMenu": true
+    }
+  ],
+  "errors": [],
+  "localPages": 41
+}

@@ -1,0 +1,21 @@
+const topics=[['İzmir','okuma','Selin Kaya'],['Ankara','sergi','Deniz Yılmaz'],['Bursa','atölye','Ece Demir'],['Eskişehir','arşiv','Can Aksoy'],['Antalya','park','Seda Arslan'],['Mersin','kütüphane','Emre Aydın'],['Samsun','gözlem','Derya Çelik'],['Edirne','tasarım','Ozan Şen'],['Muğla','bisiklet','Elif Koç'],['Trabzon','müzik','Mert Yıldız']];
+export const goodCases=topics.map(([city,topic,person],i)=>{
+  const sourceTitle=`${city} ${topic} programının ayrıntıları paylaşıldı`;
+  const sourceExcerpt=`${city} belediyesi ${topic} alanındaki programını duyurdu. Program 24 Ekim 2026 tarihinde tanıtıldı. Çalışmayı ${person} anlattı. Belediye açıklamasında katılımın ücretsiz olduğu, programın mahalle sakinlerine açık tutulacağı ve başvuruların yerel merkezden alınacağı belirtildi. Programda ayrı çalışma alanları bulunacak. Katılımcılar ilgilendikleri bölümü seçebilecek. Ön kayıt yapılması isteniyor. Yerel merkez çalışma saatleri içinde başvuruları kabul edecek. İçeriklerin başlangıç düzeyindeki katılımcılara uygun olduğu ve önceden deneyim aranmadığı açıklandı. Uygulama süresince sorular için merkez çalışanlarına ulaşılabilecek. Çalışanlar, başvuran kişilere alanların kullanımını anlatacak. Programın uygulanması sırasında katılımcı görüşleri alınacak ve değerlendirme toplantısında ele alınacak. Açıklama, başka bir tarihe ilişkin bilgi içermiyor. Belediye, yalnızca duyuruda yer alan başvuru yolunun kullanılmasını istedi. Mekân düzenlemesi kapsamında çalışma masaları ve oturma bölümleri hazırlanacak. Çalışma alanlarının kullanımı önceden belirlenen programa göre düzenlenecek. Katılımcılar kendi seçtikleri bölümde çalışacak. Değerlendirme görüşmeleri programın içeriği ve alanların kullanımı ile sınırlı olacak. Belediye, bu hazırlıkların programı mahalle sakinlerine açma amacını taşıdığını bildirdi.`;
+  const body=`${city} belediyesi, mahalle sakinlerine yönelik ${topic} çalışmasının ayrıntılarını açıkladı. ${person} tarafından tanıtılan programda katılım için ücret alınmayacağı belirtildi. Belediye, başvurmak isteyenlerin yerel merkeze ön kayıt yaptırmasını istedi. Başvuruların, merkezin açık olduğu saatlerde kabul edileceği bildirildi. Duyuruda, çalışmanın başlangıç seviyesine uygun hazırlandığı ve katılacak kişilerden daha önce deneyim edinmiş olmalarının beklenmediği ifade edildi.\n\nAçıklamaya göre program için birbirinden ayrı alanlar ayrılacak; katılımcılar bu alanlardan ilgi duyduklarını tercih edebilecek. Merkez çalışanları hem kullanım konusunda bilgi verecek hem de süreç boyunca yöneltilecek soruları yanıtlayacak. Masa ve oturma bölümlerine ilişkin hazırlıklar da çalışma kapsamında yer alıyor. Kullanım düzeninin program çerçevesinde belirleneceği kaydedildi. Katılımcılardan alınan görüşler ise program içeriğinin ve alan kullanımının ele alınacağı değerlendirme toplantısına taşınacak. Belediye, başvuru için duyuruda belirtilen yolun izlenmesi gerektiğini ayrıca vurguladı.`;
+  return {id:`good-${i+1}`,expected:'good',article:{id:`eval-${i}`,title:`${city} ${topic} çalışmasının başvuru süreci açıklandı`,summary:`${city} belediyesi ${topic} programına katılımın ücretsiz olacağını bildirdi. Başvurular yerel merkezden alınacak.`,body,source_title:sourceTitle,source_excerpt:sourceExcerpt,source_name:'Kurgu kaynak',source_id:'source-a',source_published_at:'2026-10-24T10:00:00Z',created_at:'2026-10-24T10:00:00Z',source_url:`https://example.invalid/eval/${i}`,category:'Gündem',sensitivity:'normal'}};
+});
+const mutations=[
+  a=>{a.body=a.body.replace('ücret alınmayacağı','72 lira ücret alınacağı');},
+  a=>{a.body=a.body.replace('Deniz Yılmaz','Cem Arı');},
+  a=>{a.body+=' Belediye başkanı, “Her başvuru kabul edilecek” dedi.';},
+  a=>{a.title='Program iptal edildi';},
+  a=>{a.body+=' Program sayesinde trafik tamamen bitti.';},
+  a=>{a.body+=' Program 25 Ekim 2026 tarihinde başlayacak.';},
+  a=>{a.body+=' Katılım tüm mahalle sakinleri için zorunlu tutuldu.';},
+  a=>{a.summary+=' Başvurular sadece internet üzerinden alınacak.';},
+  a=>{a.body+=' Başvuru süresi 12 Kasım tarihinde sona erecek.';},
+  a=>{a.body+=' Belediye programı özel bir şirkete devretti.';}
+];
+export const badCases=goodCases.map((test,i)=>{const article=structuredClone(test.article);mutations[i](article);return {id:`bad-${i+1}`,expected:'bad',article};});
+export const cases=[...goodCases,...badCases];

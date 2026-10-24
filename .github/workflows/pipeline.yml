@@ -1,0 +1,91 @@
+name: Haber yayını
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: meridyen-pipeline
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: vars.PIPELINE_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      NODE_USE_ENV_PROXY: '1'
+      SITE_URL: ${{ vars.SITE_URL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-fund
+      - name: Önceki derlemeyi geri yükle
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            dist
+            .cache
+          key: build-${{ github.run_id }}
+          restore-keys: build-
+      - name: Yapılandırmayı kontrol et
+        run: npm run preflight
+      - name: Haberleri topla ve yaz
+        run: npm run ingest
+      - name: Haberleri incele
+        run: npm run verify
+      - name: Statik siteyi derle
+        run: npm run build
+      - name: Dağıtım öncesi kontrol
+        run: npm run audit:site
+      - name: Cloudflare Pages'e yükle
+        run: npx wrangler pages deploy dist --project-name "$PAGES_PROJECT" --branch main
+        env:
+          PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+      - name: Sosyal kanallara gönder
+        run: npm run social
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+      - name: Derleme önbelleğini kaydet
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            dist
+            .cache
+          key: build-${{ github.run_id }}
+      - name: Günlük etkinlik kaydı
+        if: github.event_name == 'schedule'
+        run: |
+          TODAY=$(date -u +%F)
+          CURRENT=$(cat .github/keepalive 2>/dev/null || true)
+          if [ "$TODAY" != "$CURRENT" ]; then
+            printf '%s\n' "$TODAY" > .github/keepalive
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add .github/keepalive
+            git commit -m 'chore: günlük etkinlik kaydı [skip ci]'
+            git push
+          fi
+      - name: Çalışma raporunu sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: calisma-raporu
+          path: artifacts/preflight.json
+          retention-days: 7

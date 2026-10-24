@@ -1,0 +1,623 @@
+{
+  "live": false,
+  "mode": "Yerel akış testi; sağlayıcı başarımı ölçümü değildir",
+  "finishedAt": "2026-10-24T23:00:07.280Z",
+  "fingerprint": "5a6a4d5bd75a30733b0ff6ac009d93c79b5e637f3b8ba50ae7549b3fb9ff65e8",
+  "acceptedGood": 1,
+  "detectedBad": 1,
+  "completeResponses": true,
+  "passed": true,
+  "reports": [
+    {
+      "id": "good-1",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-2",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-3",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-4",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-5",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-6",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-7",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-8",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-9",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "good-10",
+      "expected": "good",
+      "verdict": "auto_pass",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "pass",
+        "score": 95,
+        "issues": [],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-1",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan sayı veya tarih: 72",
+          "type": "sayi_tarih",
+          "severity": "yuksek"
+        },
+        {
+          "text": "Kaynakta aynı birimle bulunmayan değer: 72 lira",
+          "type": "sayi_tarih",
+          "severity": "yuksek"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-2",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan büyük harfli sözcük: Cem",
+          "type": "isim",
+          "severity": "dusuk"
+        },
+        {
+          "text": "Kaynakta bulunmayan büyük harfli sözcük: Arı",
+          "type": "isim",
+          "severity": "dusuk"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-3",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan alıntı: Her başvuru kabul edilecek",
+          "type": "uydurma",
+          "severity": "yuksek"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-4",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-5",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-6",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan sayı veya tarih: 25",
+          "type": "sayi_tarih",
+          "severity": "yuksek"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-7",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan büyük harfli sözcük: Katılım",
+          "type": "isim",
+          "severity": "dusuk"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-8",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-9",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [
+        {
+          "text": "Kaynakta bulunmayan sayı veya tarih: 12",
+          "type": "sayi_tarih",
+          "severity": "yuksek"
+        },
+        {
+          "text": "Kaynakta bulunmayan büyük harfli sözcük: Kasım",
+          "type": "isim",
+          "severity": "dusuk"
+        }
+      ],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    },
+    {
+      "id": "bad-10",
+      "expected": "bad",
+      "verdict": "needs_review",
+      "rules": [],
+      "reviewer1": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "groq",
+        "model": "test-double",
+        "family": "llama"
+      },
+      "reviewer2": {
+        "verdict": "fail",
+        "score": 25,
+        "issues": [
+          {
+            "text": "Kaynağın desteklemediği ifade.",
+            "type": "uydurma",
+            "severity": "yuksek"
+          }
+        ],
+        "provider": "openrouter",
+        "model": "test-double",
+        "family": "qwen"
+      }
+    }
+  ]
+}

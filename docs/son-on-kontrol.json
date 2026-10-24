@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-24T22:33:02.739Z",
+  "providers": {
+    "gemini": {
+      "status": "missing_key",
+      "models": []
+    },
+    "groq": {
+      "status": "missing_key",
+      "models": []
+    },
+    "openrouter": {
+      "status": "verified",
+      "models": [
+        "nvidia/nemotron-3.5-super-vl:free",
+        "google/gemma-4-26b-a4b-it:free"
+      ]
+    }
+  },
+  "feeds": [
+    {
+      "name": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel",
+      "available": false,
+      "error": "getaddrinfo ENOTFOUND www.aa.com.tr"
+    },
+    {
+      "name": "BBC Türkçe",
+      "url": "https://feeds.bbci.co.uk/turkce/rss.xml",
+      "available": true,
+      "items": 16
+    },
+    {
+      "name": "Bloomberg HT",
+      "url": "https://www.bloomberght.com/rss",
+      "available": true,
+      "items": 50
+    },
+    {
+      "name": "DW Türkçe",
+      "url": "https://rss.dw.com/xml/rss-tr-all",
+      "available": false,
+      "error": "Geçersiz veya desteklenmeyen RSS XML"
+    },
+    {
+      "name": "BBC News World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "available": true,
+      "items": 31
+    },
+    {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "available": true,
+      "items": 45
+    },
+    {
+      "name": "NYT World",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "available": false,
+      "error": "fetch failed"
+    },
+    {
+      "name": "NPR World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "available": true,
+      "items": 10
+    },
+    {
+      "name": "DW English",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "available": true,
+      "items": 11
+    }
+  ],
+  "rates": {
+    "fx": {
+      "available": true
+    },
+    "crypto": {
+      "available": true
+    }
+  }
+}

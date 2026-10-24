@@ -1,0 +1,11 @@
+[
+  {"name":"Anadolu Ajansı","feed_url":"https://www.aa.com.tr/tr/rss/default?cat=guncel","category":"Gündem","trust_level":3,"publisher_key":"aa","active":false,"terms_confirmed":false},
+  {"name":"BBC Türkçe","feed_url":"https://feeds.bbci.co.uk/turkce/rss.xml","category":"Gündem","trust_level":3,"publisher_key":"bbc","active":false,"terms_confirmed":false},
+  {"name":"Bloomberg HT","feed_url":"https://www.bloomberght.com/rss","category":"Ekonomi","trust_level":3,"publisher_key":"bloomberght","active":false,"terms_confirmed":false},
+  {"name":"DW Türkçe","feed_url":"https://rss.dw.com/xml/rss-tr-all","category":"Dünya","trust_level":3,"publisher_key":"dw","active":false,"terms_confirmed":false},
+  {"name":"BBC News World","feed_url":"https://feeds.bbci.co.uk/news/world/rss.xml","category":"Dünya","trust_level":3,"publisher_key":"bbc","active":false,"terms_confirmed":false},
+  {"name":"The Guardian World","feed_url":"https://www.theguardian.com/world/rss","category":"Dünya","trust_level":3,"publisher_key":"guardian","active":false,"terms_confirmed":false,"terms_url":"https://www.theguardian.com/help/feeds"},
+  {"name":"NYT World","feed_url":"https://rss.nytimes.com/services/xml/rss/nyt/World.xml","category":"Dünya","trust_level":3,"publisher_key":"nytimes","active":false,"terms_confirmed":false},
+  {"name":"NPR World","feed_url":"https://feeds.npr.org/1004/rss.xml","category":"Dünya","trust_level":3,"publisher_key":"npr","active":false,"terms_confirmed":false,"terms_url":"https://www.npr.org/about-npr/179876898/terms-of-use"},
+  {"name":"DW English","feed_url":"https://rss.dw.com/rdf/rss-en-world","category":"Dünya","trust_level":3,"publisher_key":"dw","active":false,"terms_confirmed":false}
+]
