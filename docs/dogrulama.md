@@ -59,5 +59,6 @@ Tam Lighthouse HTML/JSON raporları yerelde `artifacts/` içindedir. GitHub kod 
 - Gerçek Gemini/Groq/OpenRouter tamamlama çağrıları ve canlı 20 örneklik model ölçümü. Anahtarlar yok. `AUTO_PUBLISH` ve canlı değerlendirme kilidi kapalı.
 - Cloudflare hesabında gerçek Pages dağıtımı, üretim adresinde önbellek ve Lighthouse.
 - Telegram/Bluesky'ye gerçek gönderim. Kanal anahtarları verilmedi; ileti gönderilmedi.
-- Kaynakların yeniden kullanım izni, verilen DW Türkçe adresinin geçerliliği ve NYT RSS erişimi.
+- Kullanıcı, yeniden kullanım izni/lisansı olmadığını bildirip tüm kaynakların pasif kalmasını istedi; bu karar uygulandı. Verilen DW Türkçe adresinin geçerliliği ve NYT RSS erişimi ayrıca çözümlenmedi.
 - Gerçek site sahibi/iletişim bilgileriyle künye ve KVKK metninin tamamlanması.
+- GitHub depo oluşturma: bağlı entegrasyon `Resource not accessible by integration (createRepository)` yanıtıyla işlemi reddetti. Yerel Git commit'i ve ZIP teslimi hazır; uzak depo oluşmadı.

@@ -21,6 +21,8 @@ Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikl
 
 Canlı kurulum için Meridyen'e ait Supabase projesi, Cloudflare hesabı/projesi, servis anahtarları, gerçek künye bilgileri ve kaynakların kullanım izni gerekir. Varsayılanlar: `AUTO_PUBLISH=false`, reklam kapalı, kaynaklar pasif, yayın iş akışı kapalı. Yönetici girişi, bağlantı eklenene kadar açık bir yapılandırma mesajı gösterir.
 
+Kullanıcı, kaynaklar için izin/lisansı olmadığını bildirerek tümünün pasif kalmasını istedi. `sources.json` bu kararı uygular. GitHub'da yeni depo oluşturma denemesi, bağlı entegrasyonun `createRepository` yetkisi olmadığı için reddedildi; kaynak kodu yerel Git deposunda commit edildi ve ZIP olarak paketlendi. GitHub'a aktarım için önce yetkili hesapta boş bir depo oluşturulması gerekir.
+
 ## Veritabanı ve yönetici
 
 1. Ücretsiz bir Supabase projesinde `migrations/20261024222533_meridyen_initial.sql` dosyasını SQL Editor üzerinden çalıştırın. Mevcut uygulamaların veritabanlarında çalıştırmayın. Supabase CLI kullanılıyorsa `supabase/migrations`, aynı dosyalara işaret eder; hedef bağlantıyı kontrol ettikten sonra `npx supabase db push` kullanın.
