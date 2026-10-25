@@ -21,7 +21,7 @@ Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikl
 
 Canlı kurulum için Meridyen'e ait Supabase projesi, Cloudflare hesabı/projesi, servis anahtarları, gerçek künye bilgileri ve kaynakların kullanım izni gerekir. Varsayılanlar: `AUTO_PUBLISH=false`, reklam kapalı, kaynaklar pasif, yayın iş akışı kapalı. Yönetici girişi, bağlantı eklenene kadar açık bir yapılandırma mesajı gösterir.
 
-Kullanıcı, kaynaklar için izin/lisansı olmadığını bildirerek tümünün pasif kalmasını istedi. `sources.json` bu kararı uygular. GitHub'da yeni depo oluşturma denemesi, bağlı entegrasyonun `createRepository` yetkisi olmadığı için reddedildi; kaynak kodu yerel Git deposunda commit edildi ve ZIP olarak paketlendi. GitHub'a aktarım için önce yetkili hesapta boş bir depo oluşturulması gerekir.
+Kullanıcı, kaynaklar için izin/lisansı olmadığını bildirerek tümünün pasif kalmasını istedi. `sources.json` bu kararı uygular. Kaynak kodunun hedef deposu: [yusuf-basaran/meridyen](https://github.com/yusuf-basaran/meridyen).
 
 ## Veritabanı ve yönetici
 
