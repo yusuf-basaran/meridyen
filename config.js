@@ -18,6 +18,11 @@ export const config = {
   archiveAfterFiles: 18000,
   socialHourlyLimit: 6,
   contact: { owner: '', email: '', address: '' },
+  deployment: {
+    cloudflareAccountId: '2f25c9df6a3712f6e2a176ad50ef4ea8',
+    pagesProject: 'meridyen',
+    siteURL: 'https://meridyen.pages.dev'
+  },
   providers: {
     gemini: { baseUrl: 'https://generativelanguage.googleapis.com/v1beta', keyEnv: 'GEMINI_API_KEY', models: [] },
     groq: { baseUrl: 'https://api.groq.com/openai/v1', keyEnv: 'GROQ_API_KEY', models: [] },
@@ -25,6 +30,7 @@ export const config = {
   },
   roles: { writer: ['gemini', 'groq', 'openrouter'], reviewer1: ['groq'], reviewer2: ['openrouter'] },
   endpoints: {
+    cloudflare: 'https://api.cloudflare.com/client/v4',
     fx: 'https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR,TRY',
     crypto: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=try',
     telegram: 'https://api.telegram.org',

@@ -17,11 +17,21 @@ npm run dev
 
 ## Kurulum durumu
 
-Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikleri, yönetim paneli, kur uç noktası ve yayın iş akışları hazırlanmıştır. Yerel SQL testleri gerçek PostgreSQL motorunun PGlite sürümünde çalışır. Henüz uzak Supabase projesine migration uygulanmamış, Cloudflare'a dağıtım yapılmamıştır. Mevcut bağlı başka uygulamaların projeleri değiştirilmemiştir.
+Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikleri, yönetim paneli, kur uç noktası ve yayın iş akışları hazırlanmıştır. Yerel SQL testleri gerçek PostgreSQL motorunun PGlite sürümünde çalışır. Cloudflare'da `meridyen` Pages projesi `main` dalıyla oluşturuldu; hedef adres `https://meridyen.pages.dev`. Henüz uzak Supabase projesine migration uygulanmamış, site dağıtılmamıştır. Mevcut bağlı başka uygulamaların projeleri değiştirilmemiştir.
 
 Canlı kurulum için Meridyen'e ait Supabase projesi, Cloudflare hesabı/projesi, servis anahtarları, gerçek künye bilgileri ve kaynakların kullanım izni gerekir. Varsayılanlar: `AUTO_PUBLISH=false`, reklam kapalı, kaynaklar pasif, yayın iş akışı kapalı. Yönetici girişi, bağlantı eklenene kadar açık bir yapılandırma mesajı gösterir.
 
 Kullanıcı, kaynaklar için izin/lisansı olmadığını bildirerek tümünün pasif kalmasını istedi. `sources.json` bu kararı uygular. Kaynak kodunun hedef deposu: [yusuf-basaran/meridyen](https://github.com/yusuf-basaran/meridyen).
+
+25 Ekim'de kullanıcı veritabanı kurulumunu erteledi. Yeni Supabase projesi oluşturulmadı; alternatif bir veritabanına geçiş yapılmadı. Aşağıdaki Supabase adımları mevcut kod için referanstır; canlı yayın veritabanı kararı ve eksik hesap bilgileri tamamlanana kadar bekler.
+
+## GitHub üzerinden ilk kurulum
+
+Cloudflare proje adı, hesap kimliği ve hedef adres `config.js` içindeki `deployment` alanında hazırdır. İlk yayın için GitHub Secrets'a `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` ve `CLOUDFLARE_API_TOKEN` eklenmelidir. Gerçek Meridyen veritabanında aşağıdaki migration uygulanmış olmalıdır. Anahtarları sohbete veya kaynak dosyalara yazmayın.
+
+GitHub **Actions → Haber yayını → Run workflow** formunda site sahibi, iletişim e-postası ve adresi doldurun. Bu bilgiler sitede görünür. Akış eksik anahtarları/veritabanı şemasını kontrol eder, dokuz kaynak kaydını pasif ekler, Pages projesini kontrol eder (gerekiyorsa oluşturur), gerçek site adresini belirler ve dağıtır. Başarılı dağıtımda künye bilgileri `config.js` içine commit edilir. İlk yayında bilgisayarınızda komut çalıştırmanız gerekmez.
+
+**Actions → Kurulum kontrolü** akışı, eksik bilgileri ve veritabanı durumunu yalnızca ad/durum olarak raporlar; anahtar değerlerini göstermez. Akışın başarılı çalışması kurulumun hazır olduğu anlamına gelmez; özetteki `Kurulum: hazır/eksikler var` sonucuna bakın. Kontrol yerelde `node scripts/setup-check.mjs --report-only` ile de çalıştırılabilir.
 
 ## Veritabanı ve yönetici
 
@@ -79,7 +89,7 @@ Statik derleme yalnızca `published` haberleri okur. Kategori başına sayfa boy
 
 ## GitHub Actions ve Cloudflare Pages
 
-Herkese açık GitHub deposunda `.github/workflows/pipeline.yml`, 30 dakikada bir veya elle çalıştırılır. Eşzamanlı ikinci çalışma kuyruğa alınır. İşler: kaynak kontrolü → ingest → verify → build → çıktı kontrolü → Pages dağıtımı → sosyal gönderim. Sosyal bağlantıların açılabilmesi için dağıtım sosyal gönderimden önce yapılır; ayrıca gönderim öncesinde sayfaya HTTP HEAD isteği atılır.
+Herkese açık GitHub deposunda `.github/workflows/pipeline.yml` elle çalıştırılabilir. 30 dakikalık zamanlama, `PIPELINE_ENABLED=true` olduğunda açılır. Eşzamanlı ikinci çalışma kuyruğa alınır. İşler: künye/kurulum kontrolü → kaynak kayıtları → ingest → verify → Pages projesi/adresi → build → çıktı kontrolü → Pages dağıtımı → sosyal gönderim. Sosyal bağlantıların açılabilmesi için dağıtım sosyal gönderimden önce yapılır; ayrıca gönderim öncesinde sayfaya HTTP HEAD isteği atılır.
 
 GitHub Actions Secrets:
 
@@ -91,22 +101,23 @@ GEMINI_API_KEY
 GROQ_API_KEY
 OPENROUTER_API_KEY
 CLOUDFLARE_API_TOKEN
-CLOUDFLARE_ACCOUNT_ID
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID
 BLUESKY_HANDLE
 BLUESKY_APP_PASSWORD
 ```
 
-GitHub Actions Variables:
+`CLOUDFLARE_ACCOUNT_ID` yalnızca `config.js` içindeki hazır hesap kimliğini değiştirmek isterseniz ayrıca Secret olarak eklenir.
+
+İsteğe bağlı GitHub Actions Variables:
 
 ```text
-SITE_URL                     Gerçek HTTPS site adresi
-CLOUDFLARE_PAGES_PROJECT      Oluşturduğunuz Pages proje adı
-PIPELINE_ENABLED             Kurulum tamamlanınca true
+SITE_URL                     Özel alan adı kullanıyorsanız gerçek HTTPS adresi
+CLOUDFLARE_PAGES_PROJECT      Farklı bir Pages projesi kullanıyorsanız proje adı
+PIPELINE_ENABLED             30 dakikalık zamanlamayı açmak için true
 ```
 
-`GITHUB_REPOSITORY` Actions tarafından sağlanır. Cloudflare token'ı yalnızca ilgili hesapta Pages düzenleme yetkisi taşımalıdır. Pages projesinde ana dal `main` olmalı; dağıtım komutu `npx wrangler pages deploy dist --project-name PROJE_ADI --branch main` şeklindedir. `functions/api/rates.js`, Wrangler tarafından aynı dağıtıma eklenir; Supabase servis anahtarı Cloudflare ortamına yüklenmez. Barındırmada yalnızca bu kur uç noktası sunucu kodudur; veri işleyen Node betikleri GitHub Actions'ta çalışır.
+`GITHUB_REPOSITORY` Actions tarafından sağlanır. Cloudflare token'ı yalnızca ilgili hesapta Pages düzenleme yetkisi taşımalıdır. Hazır proje `meridyen` ve ana dal `main` kullanılır. Proje/adres kontrolü Pages API üzerinden yapılır; 401/403 hatalarında yeni proje oluşturulmaz. Farklı GitHub deposuna bağlı proje veya farklı üretim dalı otomatik değiştirilmez. Dağıtım komutu `npx wrangler pages deploy dist --project-name PROJE_ADI --branch main` şeklindedir. `functions/api/rates.js`, Wrangler tarafından aynı dağıtıma eklenir; Supabase servis anahtarı Cloudflare ortamına yüklenmez. Barındırmada yalnızca bu kur uç noktası sunucu kodudur; veri işleyen Node betikleri GitHub Actions'ta çalışır.
 
 Başarılı zamanlanmış çalışmada günde bir kez etkinlik commit'i atılır. Bu önlem GitHub'ın zamanlanmış işlere ilişkin hareketsizlik davranışını azaltmayı amaçlar, kesintisiz çalışma garantisi vermez. Zamanlama tam dakikasında çalışmayabilir; bu nedenle “en geç 30 dakika” bir zamanlama hedefidir. Acil durumda Actions sayfasından `Run workflow` kullanılabilir. Her ingest turu Supabase'i okur ve çalışma kaydı yazar; ücretsiz proje durdurulmasını tümüyle garanti edemez. `pipeline_runs` kayıtları ve GitHub bağlantısı panelden izlenebilir.
 

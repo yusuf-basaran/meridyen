@@ -57,7 +57,13 @@ Tam Lighthouse HTML/JSON raporları yerelde `artifacts/` içindedir. GitHub kod 
 
 - Meridyen'e ait uzak Supabase projesinde migration, Auth oturumu ve RLS/advisor kontrolü. Bağlı başka uygulamaların projelerine işlem yapılmadı. Yerel Supabase servis yığını başlatılmadığından CLI migration-list bağlantısı kurulamadı; SQL testleri PGlite ile yapıldı.
 - Gerçek Gemini/Groq/OpenRouter tamamlama çağrıları ve canlı 20 örneklik model ölçümü. Anahtarlar yok. `AUTO_PUBLISH` ve canlı değerlendirme kilidi kapalı.
-- Cloudflare hesabında gerçek Pages dağıtımı, üretim adresinde önbellek ve Lighthouse.
+- Cloudflare hesabında `meridyen` Pages projesi 25 Ekim 2026'da oluşturuldu; `main` dalı ve `meridyen.pages.dev` adresi API üzerinden kontrol edildi. Henüz site dağıtımı, üretim adresinde önbellek ve Lighthouse ölçümü yapılmadı.
 - Telegram/Bluesky'ye gerçek gönderim. Kanal anahtarları verilmedi; ileti gönderilmedi.
 - Kullanıcı, yeniden kullanım izni/lisansı olmadığını bildirip tüm kaynakların pasif kalmasını istedi; bu karar uygulandı. Verilen DW Türkçe adresinin geçerliliği ve NYT RSS erişimi ayrıca çözümlenmedi.
 - Gerçek site sahibi/iletişim bilgileriyle künye ve KVKK metninin tamamlanması.
+
+## 25 Ekim kurulum otomasyonu
+
+Kurulum bilgisi raporu, GitHub formundan künye kaydı ve Pages proje/adres hazırlığı eklendi. 24 kod/veritabanı testi geçti; bunlara eksik anahtarda servis çağrılmaması, rapora anahtar değeri çıkmaması, künye girdilerinin güvenli yazılması ve Cloudflare 403 yanıtında oluşturma yapılmaması dahildir. Demo derlemesi ve 71 dosyalık çıktı kontrolü geçti. Yeni otomasyon, hazır hesap bilgileri ve anahtarlar olmadan canlı servisleri kurmuş sayılmaz.
+
+Kullanıcı aynı gün Supabase adımının atlanmasını istedi. Yeni veritabanı oluşturulmadı ve mevcut uygulamaların veritabanları değiştirilmedi. Cloudflare projesi API üzerinden yeniden okundu; henüz dağıtımı bulunmuyor.

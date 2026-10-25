@@ -3,6 +3,19 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      owner:
+        description: 'Site sahibi adı (sitede görünür; önceden kaydedildiyse boş bırakın)'
+        type: string
+        required: false
+      contact_email:
+        description: 'İletişim e-postası (sitede görünür)'
+        type: string
+        required: false
+      contact_address:
+        description: 'İletişim adresi (sitede görünür)'
+        type: string
+        required: false
 permissions:
   contents: write
 concurrency:
@@ -10,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: vars.PIPELINE_ENABLED == 'true'
+    if: github.event_name == 'workflow_dispatch' || vars.PIPELINE_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
@@ -24,6 +37,7 @@ jobs:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT || github.event.repository.name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,6 +47,14 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci --no-fund
+      - name: Künye bilgilerini hazırla
+        run: node scripts/configure-contact.mjs
+        env:
+          SITE_OWNER: ${{ inputs.owner }}
+          CONTACT_EMAIL: ${{ inputs.contact_email }}
+          CONTACT_ADDRESS: ${{ inputs.contact_address }}
+      - name: Kurulumu kontrol et
+        run: node scripts/setup-check.mjs
       - name: Önceki derlemeyi geri yükle
         uses: actions/cache/restore@v4
         with:
@@ -43,18 +65,30 @@ jobs:
           restore-keys: build-
       - name: Yapılandırmayı kontrol et
         run: npm run preflight
+      - name: Kaynak kayıtlarını hazırla
+        run: npm run sources:import
       - name: Haberleri topla ve yaz
         run: npm run ingest
       - name: Haberleri incele
         run: npm run verify
+      - name: Cloudflare Pages projesini hazırla
+        run: node scripts/ensure-pages.mjs
       - name: Statik siteyi derle
         run: npm run build
       - name: Dağıtım öncesi kontrol
         run: npm run audit:site
       - name: Cloudflare Pages'e yükle
         run: npx wrangler pages deploy dist --project-name "$PAGES_PROJECT" --branch main
-        env:
-          PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+      - name: Künye ayarlarını depoya kaydet
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if ! git diff --quiet -- config.js; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add config.js
+            git commit -m 'chore: yayın iletişim bilgilerini kaydet'
+            git push
+          fi
       - name: Sosyal kanallara gönder
         run: npm run social
         env:
@@ -87,5 +121,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: calisma-raporu
-          path: artifacts/preflight.json
+          path: |
+            artifacts/preflight.json
+            artifacts/setup-report.json
           retention-days: 7
