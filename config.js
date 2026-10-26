@@ -24,11 +24,10 @@ export const config = {
     siteURL: 'https://meridyen.pages.dev'
   },
   providers: {
-    gemini: { baseUrl: 'https://generativelanguage.googleapis.com/v1beta', keyEnv: 'GEMINI_API_KEY', models: [] },
-    groq: { baseUrl: 'https://api.groq.com/openai/v1', keyEnv: 'GROQ_API_KEY', models: [] },
-    openrouter: { baseUrl: 'https://openrouter.ai/api/v1', keyEnv: 'OPENROUTER_API_KEY', models: ["nvidia/nemotron-3.5-super-vl:free","google/gemma-4-26b-a4b-it:free"] }
+    gemini: { baseUrl: 'https://generativelanguage.googleapis.com/v1beta', keyEnv: 'GEMINI_API_KEY', models: [], approvedFreeModels: ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite'] },
+    groq: { baseUrl: 'https://api.groq.com/openai/v1', keyEnv: 'GROQ_API_KEY', models: [], approvedFreeModels: [] }
   },
-  roles: { writer: ['gemini', 'groq', 'openrouter'], reviewer1: ['groq'], reviewer2: ['openrouter'] },
+  roles: { writer: ['gemini'], reviewer1: ['gemini'], reviewer2: ['groq', 'gemini'] },
   endpoints: {
     cloudflare: 'https://api.cloudflare.com/client/v4',
     fx: 'https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR,TRY',

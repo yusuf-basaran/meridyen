@@ -71,15 +71,18 @@ test('SSRF ve hata maskeleme',()=>{
   for(const ip of ['127.0.0.1','10.0.0.1','169.254.169.254','192.168.1.1','::1','fd00::1','::ffff:127.0.0.1'])assert.equal(isPrivateIP(ip),true);
   process.env.TEST_SECRET='private-test-value';assert.ok(!sanitizeError(new Error('key private-test-value')).includes('private-test-value'));delete process.env.TEST_SECRET;
 });
-test('Başarısız istekler bütçeye sayılır; üç denemeden sonra yedek sağlayıcıya geçilir',async()=>{
-  const previous={gemini:config.providers.gemini.models,groq:config.providers.groq.models};
-  const oldGemini=process.env.GEMINI_API_KEY,oldGroq=process.env.GROQ_API_KEY;
-  config.providers.gemini.models=['gemini-test'];config.providers.groq.models=['llama-test'];process.env.GEMINI_API_KEY='fixture';process.env.GROQ_API_KEY='fixture';
+test('Başarısız Gemini istekleri bütçeye sayılır; aynı sağlayıcıda ücretsiz yedeğe geçilir',async()=>{
+  const previous=config.providers.gemini.models;
+  const oldGemini=process.env.GEMINI_API_KEY;
+  config.providers.gemini.models=['gemini-test','gemini-fallback-test'];process.env.GEMINI_API_KEY='fixture';
   const reservations=[];let calls=0;
   try{
-    const complete=createCompleter({getModels:async provider=>config.providers[provider].models,reserve:async provider=>{reservations.push(provider);return true;},sleep:async()=>{},fetcher:async()=>{calls++;return calls<=3?new Response('',{status:429}):Response.json({choices:[{message:{content:'[{"ok":true}]'}}]});}});
-    const response=await complete({role:'writer',system:'test',user:'[]'});assert.equal(response.provider,'groq');assert.deepEqual(reservations,['gemini','gemini','gemini','groq']);
+    const complete=createCompleter({getModels:async provider=>config.providers[provider].models,reserve:async provider=>{reservations.push(provider);return true;},sleep:async()=>{},fetcher:async url=>{
+      assert.ok(url.startsWith('https://generativelanguage.googleapis.com/'));calls++;
+      return calls<=3?new Response('',{status:429}):Response.json({candidates:[{content:{parts:[{text:'[{"ok":true}]'}]}}]});
+    }});
+    const response=await complete({role:'writer',system:'test',user:'[]'});assert.equal(response.provider,'gemini');assert.equal(response.model,'gemini-fallback-test');assert.deepEqual(reservations,['gemini','gemini','gemini','gemini']);
     const noBudget=createCompleter({getModels:async provider=>config.providers[provider].models,reserve:async()=>false,fetcher:async()=>{throw new Error('Bütçe olmadan çağrı yapılmamalı');}});
     await assert.rejects(noBudget({role:'writer',system:'test',user:'[]'}));
-  }finally{config.providers.gemini.models=previous.gemini;config.providers.groq.models=previous.groq;oldGemini===undefined?delete process.env.GEMINI_API_KEY:process.env.GEMINI_API_KEY=oldGemini;oldGroq===undefined?delete process.env.GROQ_API_KEY:process.env.GROQ_API_KEY=oldGroq;}
+  }finally{config.providers.gemini.models=previous;oldGemini===undefined?delete process.env.GEMINI_API_KEY:process.env.GEMINI_API_KEY=oldGemini;}
 });

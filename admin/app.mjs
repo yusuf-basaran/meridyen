@@ -75,6 +75,7 @@ async function edit(a){
   for(const source of a.corroborating_sources||[]){const stored=sources.find(s=>s.id===source.source_id);if(stored)publisherKeys.add(stored.publisher_key);evidence.append(el('br'),sourceLink(source.name,source.url));}
   if(publisherKeys.size<2)evidence.append(el('p','Tek kaynak. Hassas haber iki bağımsız kaynak olmadan yayımlanamaz.','risk-label'));
   if(a.verification?.edited)evidence.append(el('p','Metin son incelemeden sonra değiştirildi. Önceki denetim bulguları eski metne aittir.','risk-label'));
+  if(a.verification&&a.verification.independent!==true)evidence.append(el('p','Model incelemeleri bağımsız sağlayıcı koşulunu karşılamıyor. Kaynakla uyum puanı tek başına yayın onayı değildir; editör incelemesi gerekir.','risk-label'));
   const logs=result(await db.from('verification_log').select('*').eq('article_id',a.id).order('created_at',{ascending:false}));
   for(const log of logs){evidence.append(el('h3',`${log.role} · ${log.verdict || 'Kayıt'}`));if(log.provider)evidence.append(el('p',`${log.provider} / ${log.model || '—'}`,'admin-note'));for(const issue of Array.isArray(log.issues)?log.issues:[]){evidence.append(el('p',[issue.type,issue.severity].filter(Boolean).join(' · ')),el('blockquote',issue.text || 'Kayıt ayrıntısı bulunmuyor.'));}}
   $('#publish').disabled=a.status==='published'||a.status==='pending'||(a.sensitivity==='hassas'&&publisherKeys.size<2);$('#reject').disabled=a.status==='rejected';

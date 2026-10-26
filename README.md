@@ -76,15 +76,22 @@ Kullanıcının verdiği dokuz RSS kaynağı `sources.json` içindedir. `Dünya 
 
 Erişim ve kullanım koşullarının durumu [docs/kaynak-kontrolu.md](docs/kaynak-kontrolu.md) dosyasındadır. RSS'nin erişilebilir olması, yeniden kullanım izni sayılmaz. Kaynaklar bu nedenle pasif kayıtlıdır. Yönetim panelinde koşullar adresi ve izin kontrolü kaydedilmeden aktif edilemezler. Kaynak içe aktarımı var olan yönetici tercihlerini üzerine yazmaz. Yeni RSS adresleri önce gerçek HTTP isteğiyle kontrol edilir; yönlendirmelerde de özel ağ adresleri reddedilir.
 
-Sağlayıcı sırası ve model adları `config.js` içindedir. Model adı uydurulmaz:
+Ana sağlayıcı Gemini’dir. Yazar ve ilk inceleme Gemini’yi, ikinci inceleme uygun ücretsiz modeli doğrulanırsa Groq’u; aksi durumda yine Gemini’yi kullanır. OpenRouter ve ChatGPT entegrasyonu etkin değildir. Gereken tek anahtar `GEMINI_API_KEY`’dir; `GROQ_API_KEY` isteğe bağlıdır. Anahtarlar GitHub **Settings → Secrets and variables → Actions** altında tutulur.
+
+Gemini için 26 Ekim 2026’da [resmî ücretsiz fiyatlandırmada](https://ai.google.dev/gemini-api/docs/pricing) yer alan Flash-Lite modelleri `approvedFreeModels` listesine alınmıştır. Bu liste erişim kanıtı sayılmaz: çalışma anında hesabın gerçek `/models` kataloğunda `generateContent` desteği de doğrulanır. `models` boşsa yalnızca bu iki koşulu sağlayan modeller otomatik seçilir; ücretli veya incelenmemiş yeni modele geçilmez.
+
+Groq’ta bir modelin katalogda görünmesi ücretsiz olduğu anlamına gelmez. [Güncel kaldırma duyurusuna](https://console.groq.com/docs/deprecations) göre eski Llama modelleri ücretsiz/geliştirici kullanımından kaldırılmıştır; Qwen seçeneği ise [önizleme](https://console.groq.com/docs/models) olarak listelenmiştir. Bu nedenle Groq `approvedFreeModels` listesi şu anda boştur. Uygun, ücretsiz ve üretime hazır bir model doğrulanmadan Groq’a içerik üretimi isteği yapılmaz. Kullanıcının ChatGPT kullanmama tercihi nedeniyle Groq üzerindeki OpenAI modelleri de otomatik seçilmez.
 
 ```sh
+node --env-file-if-exists=.env scripts/check-model-access.mjs
 npm run preflight -- --discover --feeds
 ```
 
-Bu komut sağlayıcıların `/models` uç noktalarını sorgular, mevcut ücretsiz model adlarını `config.js` içine yazar ve RSS/kur kontrollerini `artifacts/preflight.json` dosyasına kaydeder. Sonrasında değişiklikleri inceleyip commit edin. Gemini/Groq anahtarı yoksa model listeleri boş kalır. OpenRouter için katalogda sıfır giriş/çıkış fiyatı olan `:free` modeller seçilir. Gemini'de Flash-Lite ailesi, diğerlerinde aile kimliği tanınan modeller kullanılır. Özel sistem talimatları `lib/prompts.mjs` içindedir. Modellerin haber metinleri içindeki talimatları izlememesi istenir.
+**Model bağlantı kontrolü** GitHub Actions işi yalnızca model kataloglarını okur. `artifacts/model-access.json` ve iş özeti anahtarların varlığını, erişimi ve onaylı model adlarını gösterir; anahtar değerleri kaydedilmez. Bu işin başarılı çalışması, eksik anahtarın mevcut olduğu veya canlı haber incelemesinin çalıştığı anlamına gelmez; rapordaki durum okunmalıdır. Katalog kontrolü içerik üretmez, veritabanına bağlanmaz ve ücretli planı etkinleştirmez.
 
-Gemini ve Groq hesaplarında ücretli faturalandırmayı etkinleştirmeyin. Uygulama kota bittiğinde ücretli bir modele geçmez; 429/hata durumunda belirlenen ücretsiz yedeklere geçer veya işi bekletir. Sağlayıcıların ücretsiz hesap limitleri değişebilir ve yerel günlük 800 istek tavanından daha düşük olabilir. Her gerçek tamamlama denemesi, başarısız olsa da, atomik veritabanı sayacına yazılır. İstek başına en çok üç deneme ve artan bekleme uygulanır.
+Gemini hesabında ücretsiz katmanda kalınmalıdır; kod, API anahtarının bağlı olduğu hesabın faturalandırma durumunu değiştirmez veya doğrulamaz. Yerel günlük 800 istek üst sınırı, sağlayıcının daha düşük ücretsiz kotasını artırmaz. Üretim çağrıları başarısız olsa da atomik sayaca yazılır; en çok üç denemeden sonra uygun ücretsiz yedeğe geçilir veya iş bekletilir.
+
+**Mevcut Gemini/Groq düzeni otomatik yayını açmaz.** Aynı Gemini modeline iki ayrı istem vermek iki bağımsız sağlayıcı sayılmaz. Gemini + Groq da yazar ve iki denetçi için gereken üç ayrı sağlayıcı şartını karşılamaz. Kaynakla uyumlu görünen metinler dahi `needs_review` durumunda kalır. Canlı değerlendirme başarılı olsa bile bu yapılandırmada yayın kilidi kapalıdır. SQL’deki kaynak ve inceleme kilitleri korunur. Ücretsiz kaynak akışı bu model incelemesine henüz bağlanmamıştır; veritabanı kurulumu ertelenmiştir.
 
 ## Haber ve yayın akışı
 
@@ -100,7 +107,7 @@ npm run social
 - İki denetçi birbirinin yanıtını görmez. Gerçek sağlayıcı/model aileleri kaydedilir. Aynı sağlayıcı veya aile kullanıldıysa sonuç otomatik yayın için geçerli sayılmaz. Eksik, hatalı veya kotaya takılan denetçi hiçbir zaman `pass` sayılmaz.
 - Yerel kurallar sayı/tarih, birim, alıntı, büyük harfli ad adayları, başlık-gövde sayıları, yasaklı ifadeler ve yedi kelimelik aynı alıntıları kontrol eder. Bunlar dilbilimsel ad tanıma veya hakikat kanıtı değildir; muhafazakâr sonuçlar incelemeye düşebilir.
 - Çapraz eşleşme, son 12 saatteki kaynak başlıklarının ortak sözcük oranına dayanır. Eşik `.5`, en az üç ortak anlamlı sözcüktür. İngilizce-Türkçe eşleşme için anlamsal çeviri yapılmaz. “İki bağımsız kaynak”, asıl yayıncı ile farklı bir yayıncının eşleşen haberi anlamına gelir.
-- İki denetçi `pass`, skorlar en az 80, kurallar temiz ve kaynak koşulu uygunsa `auto_pass` verilir. Ciddi sorunlarda bir kez yeniden yazım yapılır; yeniden yazım sayısı kalıcıdır. Başarısız veya eksik yanıt güvenli biçimde incelemeye bırakılır. Hassas içerik her zaman insan incelemesinde kalır.
+- İki denetçi `pass`, skorlar en az 80, kurallar temiz, kaynak koşulu uygun ve yazar/iki denetçi üç farklı sağlayıcı/model ailesindeyse `auto_pass` verilebilir. Mevcut Gemini/Groq düzeni bu bağımsızlık şartını karşılamaz. Ciddi sorunlarda bir kez yeniden yazım yapılır; yeniden yazım sayısı kalıcıdır. Başarısız veya eksik yanıt güvenli biçimde incelemeye bırakılır. Hassas içerik her zaman insan incelemesinde kalır.
 - `AUTO_PUBLISH` kapalıdır. Açılması için güncel modeller/kurallarla başarılı **canlı** değerlendirme raporu da gerekir. Yerel test raporu bu kilidi açamaz.
 
 Statik derleme yalnızca `published` haberleri okur. Kategori başına sayfa boyutu 20'dir. Ana sayfa, listeler, arama indeksi, XML dosyaları her derlemede; haber sayfaları içerik/şablon değişince yazılır. Eski ve yayından kaldırılmış sayfalar temizlenir. GitHub önbelleği `dist/` ve derleme manifestini saklar. Haber adresleri `/haber/YYYY/AA/slug/` biçimindedir. 18.000 tekil haber dosyasına yaklaşılınca eski aylar tek arşiv sayfasında toplanır; ay bazlı yönlendirmeler eski bağlantıları korur. 24 MiB üstündeki arşiv derlemeyi durdurur.
@@ -119,7 +126,6 @@ SUPABASE_ANON_KEY
 SUPABASE_SERVICE_ROLE_KEY
 GEMINI_API_KEY
 GROQ_API_KEY
-OPENROUTER_API_KEY
 CLOUDFLARE_API_TOKEN
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID

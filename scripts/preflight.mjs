@@ -9,18 +9,16 @@ const checkFeeds=process.argv.includes('--feeds');
 const report={checkedAt:new Date().toISOString(),providers:{},feeds:[],rates:{}};
 let source=await readFile(new URL('../config.js',import.meta.url),'utf8');
 for(const [provider,settings] of Object.entries(config.providers)){
-  if(provider!=='openrouter'&&!process.env[settings.keyEnv]){report.providers[provider]={status:'missing_key',models:[]};continue;}
+  if(!process.env[settings.keyEnv]){report.providers[provider]={status:'missing_key',models:[]};continue;}
   try{
     const catalog=await providerCatalog(provider);
     let selected=settings.models;
     if(discover){
-      const candidates=catalog.filter(m=>m.free&&m.family&&(provider!=='gemini'||/flash-lite/i.test(m.id)));
-      const families=new Set();selected=[];
-      for(const model of candidates){if(provider==='openrouter'&&families.has(model.family))continue;selected.push(model.id);families.add(model.family);if(selected.length>=(provider==='openrouter'?3:1))break;}
+      selected=settings.approvedFreeModels.filter(id=>catalog.some(m=>m.id===id&&m.free&&m.family));
       const line=new RegExp(`(${provider}: \\{[^\\n]*models: )\\[[^\\n]*?\\]`);
       source=source.replace(line,`$1${JSON.stringify(selected)}`);
     }
-    report.providers[provider]={status:selected.length&&selected.every(id=>catalog.some(m=>m.id===id&&m.free&&m.family))?'verified':'needs_configuration',models:selected};
+    report.providers[provider]={status:(selected.length?selected.every(id=>catalog.some(m=>m.id===id&&m.free&&m.family)):catalog.some(m=>m.free&&m.family))?'verified':'no_approved_free_model',models:selected.length?selected:catalog.filter(m=>m.free&&m.family).map(m=>m.id)};
   }catch(error){report.providers[provider]={status:'unavailable',error:sanitizeError(error)};}
 }
 if(discover)await writeFile(new URL('../config.js',import.meta.url),source);
