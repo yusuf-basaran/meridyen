@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-26T18:58:00.543Z",
+  "updatedAt": "2026-10-26T23:06:01.889Z",
   "items": [
+    {
+      "id": "free-globalvoices-114ef2a3c4d65d8a",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Anna Romandash",
+      "title": "Volunteers from Poland remember how Poles opened their homes to Ukrainian refugees in 2022",
+      "summary": "Five years into the full-scale war, however, the border has also revealed the limits of that extraordinary solidarity.",
+      "url": "https://globalvoices.org/2026/10/26/volunteers-from-poland-remember-how-poles-opened-their-homes-to-ukrainian-refugees-in-2022/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-26T19:45:17.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-89b82efc97f5f84f",
       "sourceId": "nasa",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-22T20:06:56.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-4a614768c26d4e91",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Ranking Digital Rights",
-      "title": "What telecoms leave behind when they exit a country",
-      "summary": "“While the network will continue to provide service to users, the transparency practices and internal procedures and protocols for data safeguards may change after a sale.”",
-      "url": "https://globalvoices.org/2026/10/22/what-telecoms-leave-behind-when-they-exit-a-country/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-22T12:20:06.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
