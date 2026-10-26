@@ -17,6 +17,16 @@ npm run dev
 
 ## Kurulum durumu
 
+### Vercel'de ilk dağıtım
+
+`vercel.json`, `dist/` çıktısını ve `npm run build:vercel` komutunu tanımlar. Veritabanı kararı ertelendiği için Vercel'deki varsayılan `launch` modu haber içermeyen **Yayına hazırlanıyoruz** sayfasını üretir. Veritabanına bağlanmaz, gösterim haberlerini kullanmaz, tarayıcıya veritabanı yapılandırması çıkarmaz; sayfalar `noindex` ve `robots.txt` ile arama motorlarına kapalıdır. Kaynakları etkinleştirmez. Yerelde aynı hazırlık `npm run build:launch` ile denenebilir.
+
+`SITE_URL` varsa geçerli HTTPS kök adresi kullanılır. Yoksa Vercel'in sistem değişkenlerinden üretimde `VERCEL_PROJECT_PRODUCTION_URL`, önizlemede `VERCEL_URL` alınır; böylece eksik `SITE_URL` ilk dağıtımı durdurmaz. Sistem değişkenleri kapalıysa hazırlık yine derlenir fakat canonical adres üretilmez. Vercel'de **Enable access to System Environment Variables** açık tutulmalıdır. Özel alan adı kullanıldığında `SITE_URL` açıkça tanımlanabilir. [Vercel sistem değişkenleri](https://vercel.com/docs/environment-variables/system-environment-variables).
+
+Gerçek haber yayınına geçişte veritabanı, künye ve kaynak izinleri tamamlandıktan sonra Vercel ortamında `MERIDYEN_BUILD_MODE=production` seçilir. Gerçek mod, mevcut veritabanı ve künye kontrollerini uygular; hata durumunda hazırlığa veya gösterime geri dönmez. `npm run build` de gerçek derleme olarak kalır. Haberleri yenileyen mevcut zamanlanmış akış Cloudflare içindir; Vercel için haber güncelleme dağıtımları ayrıca bağlanmadan otomatik haber yayını başlamaz.
+
+Vercel `/api/rates` uç noktası, Cloudflare'daki kur hesaplamasını paylaşır ve Vercel CDN'de beş dakika önbelleklenir. Cloudflare'ın `_headers` dosyası Vercel'de uygulanmadığından güvenlik başlıkları `vercel.json` içinde de tanımlıdır. Gerçek yayın aylarında arşiv yönlendirmeleri Cloudflare `_redirects` biçimindedir; Vercel gerçek yayın entegrasyonunda ayrıca aktarılmalıdır.
+
 Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikleri, yönetim paneli, kur uç noktası ve yayın iş akışları hazırlanmıştır. Yerel SQL testleri gerçek PostgreSQL motorunun PGlite sürümünde çalışır. Cloudflare'da `meridyen` Pages projesi `main` dalıyla oluşturuldu; hedef adres `https://meridyen.pages.dev`. Henüz uzak Supabase projesine migration uygulanmamış, site dağıtılmamıştır. Mevcut bağlı başka uygulamaların projeleri değiştirilmemiştir.
 
 Canlı kurulum için Meridyen'e ait Supabase projesi, Cloudflare hesabı/projesi, servis anahtarları, gerçek künye bilgileri ve kaynakların kullanım izni gerekir. Varsayılanlar: `AUTO_PUBLISH=false`, reklam kapalı, kaynaklar pasif, yayın iş akışı kapalı. Yönetici girişi, bağlantı eklenene kadar açık bir yapılandırma mesajı gösterir.

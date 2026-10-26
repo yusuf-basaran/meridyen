@@ -25,7 +25,11 @@ for(const entry of await readdir(root,{recursive:true,withFileTypes:true})){
 if(count>20000)problems.push('Ücretsiz Pages dosya sınırı aşıldı.');
 const result=JSON.parse(await readFile('.cache/build-result.json','utf8'));
 if(result.demo&&!process.argv.includes('--allow-demo'))problems.push('Gösterim verileri canlıya dağıtılamaz.');
-if(!result.demo){
+if(result.launch){
+  if(result.articles!==0)problems.push('Yayına hazırlık çıktısında haber bulunamaz.');
+  if(!(await readFile(resolve(root,'robots.txt'),'utf8')).includes('Disallow: /'))problems.push('Yayına hazırlık çıktısı arama motorlarına kapatılmalı.');
+}
+if(!result.demo&&!result.launch){
   const {config}=await import('../config.js');
   if(!config.contact.owner||!config.contact.email||!config.contact.address)problems.push('Künye ve KVKK için gerçek site sahibi, e-posta ve adres bilgileri tamamlanmalı.');
 }

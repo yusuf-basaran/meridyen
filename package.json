@@ -9,6 +9,8 @@
   "scripts": {
     "build": "node --use-env-proxy --env-file-if-exists=.env scripts/build.mjs",
     "build:demo": "node scripts/build.mjs --demo",
+    "build:launch": "node --use-env-proxy --env-file-if-exists=.env scripts/build.mjs --launch",
+    "build:vercel": "node --use-env-proxy --env-file-if-exists=.env scripts/build-vercel.mjs",
     "assets": "node scripts/assets.mjs",
     "preview": "node scripts/preview.mjs",
     "dev": "npm run build:demo && npm run preview",

@@ -7,6 +7,7 @@ import { demoArticles } from '../fixtures/articles.mjs';
 import { staticPages } from '../lib/static-pages.mjs';
 import { archiveMonths } from '../lib/archive.mjs';
 import { allRows } from '../lib/supabase.mjs';
+import { resolveSiteURL } from '../lib/build-settings.mjs';
 import { escapeHTML as e, hash, safeURL, fullDate, jsonHTML } from '../lib/utils.mjs';
 import { layout, home, articleContent, articlePath, categoryContent, categoryPath, searchContent } from '../lib/templates/pages.mjs';
 
@@ -15,10 +16,13 @@ const outIndex=process.argv.indexOf('--out');
 const dist = resolve(root, outIndex>=0?process.argv[outIndex+1]:'dist');
 const cache = dist===resolve(root,'dist')?resolve(root,'.cache'):resolve(root,'.cache',hash(dist).slice(0,12));
 const demo = process.argv.includes('--demo');
-const siteURL = process.env.SITE_URL || '';
-if (!demo && (!safeURL(siteURL) || new URL(siteURL).protocol !== 'https:')) throw new Error('Gerçek derleme için HTTPS SITE_URL gereklidir. Yerel gösterim: npm run build:demo');
+const launch = process.argv.includes('--launch');
+if (demo && launch) throw new Error('Gösterim ve yayına hazırlık modları birlikte kullanılamaz.');
+const siteURL = resolveSiteURL();
+const publish = !demo && !launch;
+if (publish && !siteURL) throw new Error('Gerçek derleme için HTTPS SITE_URL gereklidir. Vercel dışında site adresini SITE_URL ile belirtin.');
 const now = demo ? '2026-10-24T12:42:00.000Z' : new Date().toISOString();
-const articles = (demo ? structuredClone(demoArticles) : await allRows('articles', 'id,slug,title,summary,body,category,source_name,source_url,corroborating_sources,image_url,featured,published_at,updated_at', q => q.eq('status', 'published').order('published_at', { ascending: false }).order('id'))).filter(a => a.published_at && CATEGORIES.includes(a.category));
+const articles = (demo ? structuredClone(demoArticles) : launch ? [] : await allRows('articles', 'id,slug,title,summary,body,category,source_name,source_url,corroborating_sources,image_url,featured,published_at,updated_at', q => q.eq('status', 'published').order('published_at', { ascending: false }).order('id'))).filter(a => a.published_at && CATEGORIES.includes(a.category));
 await mkdir(dist, { recursive: true });
 await mkdir(cache, { recursive: true });
 await import('./assets.mjs');
@@ -37,14 +41,14 @@ async function output(path, content) {
   await writeFile(resolve(dist, name), content);
   generated.add(name);
 }
-const common = { now, demo, siteURL };
+const common = { now, demo, siteURL, noindex: launch };
 await output('_routes.json', await readFile(resolve(root,'public/_routes.json'),'utf8'));
 const render = options => layout({ ...common, ...options });
 const canonical = path => siteURL ? new URL(path, siteURL).href : '';
 
 const archived = archiveMonths(articles,config.archiveAfterFiles);
 
-await output('/', render({ title: 'Günün haberleri', description: 'Gündem, ekonomi, dünya, spor, teknoloji, bilim ve sağlık haberleri. Kaynak bağlantılarıyla güncel gelişmeler.', content: home(articles), active: 'Ana Sayfa', schema: { '@context': 'https://schema.org', '@graph': [{ '@type': 'Organization', name: SITE_NAME, url: canonical('/'), logo: canonical('/assets/logo.svg') }, { '@type': 'WebSite', name: SITE_NAME, url: canonical('/'), inLanguage: 'tr' }] } }));
+await output('/', render({ title: launch ? 'Yayına hazırlanıyoruz' : 'Günün haberleri', description: launch ? 'Meridyen Haber yayına hazırlanıyor.' : 'Gündem, ekonomi, dünya, spor, teknoloji, bilim ve sağlık haberleri. Kaynak bağlantılarıyla güncel gelişmeler.', content: launch ? `<div class="page-heading"><p class="eyebrow">${e(SITE_NAME)}</p><h1>Yayına hazırlanıyoruz</h1></div><p class="empty-state">Haberlerimiz yayın hazırlıkları tamamlandıktan sonra burada yer alacak.</p>` : home(articles), active: 'Ana Sayfa', schema: publish ? { '@context': 'https://schema.org', '@graph': [{ '@type': 'Organization', name: SITE_NAME, url: canonical('/'), logo: canonical('/assets/logo.svg') }, { '@type': 'WebSite', name: SITE_NAME, url: canonical('/'), inLanguage: 'tr' }] } : undefined }));
 const categoryURLs=[];
 for (const category of CATEGORIES) {
   const group = articles.filter(a => a.category === category);
@@ -83,17 +87,17 @@ await output('/404.html', render({ title: 'Sayfa bulunamadı', description: 'Ara
 if (demo) await output('/onizleme-kaynagi/', render({ title: 'Gösterim metinleri', description: 'Tasarım önizlemesinde kullanılan yerel gösterim metinleri.', path:'/onizleme-kaynagi/', noindex:true, content:`<div class="prose"><h1>Gösterim metinleri</h1><p>Bu önizlemedeki haberler tasarımı göstermek için hazırlanmıştır. Gerçek olay veya kurum açıklaması olarak değerlendirilmemelidir. Bu sayfa bir RSS kaynağı değildir.</p>${articles.map(a => `<article id="${e(a.slug)}"><h2>${e(a.title)}</h2><p>${e(a.summary)}</p></article>`).join('')}</div>` }));
 const adminHTML = await readFile(resolve(root, 'admin/index.html'), 'utf8');
 await output('/yonetim/', render({ title: 'Yayın yönetimi', description: 'Yetkili yayın yönetimi.', path: '/yonetim/', content: adminHTML, noindex: true, admin: true }));
-const anonKey = process.env.SUPABASE_ANON_KEY || '';
+const anonKey = launch ? '' : process.env.SUPABASE_ANON_KEY || '';
 if (anonKey && !anonKey.startsWith('sb_publishable_')) {
   try { if (JSON.parse(Buffer.from(anonKey.split('.')[1], 'base64url').toString()).role !== 'anon') throw new Error(); } catch { throw new Error('Tarayıcı yapılandırmasında yalnızca anonim veya yayımlanabilir anahtar kullanılabilir.'); }
 }
-await output('public-config.json', jsonHTML({ supabaseURL: safeURL(process.env.SUPABASE_URL), supabaseKey: anonKey, repository: /^[\w.-]+\/[\w.-]+$/.test(process.env.GITHUB_REPOSITORY || '') ? process.env.GITHUB_REPOSITORY : '' }));
+await output('public-config.json', jsonHTML({ supabaseURL: launch ? '' : safeURL(process.env.SUPABASE_URL), supabaseKey: anonKey, repository: /^[\w.-]+\/[\w.-]+$/.test(process.env.GITHUB_REPOSITORY || '') ? process.env.GITHUB_REPOSITORY : '' }));
 await output('search-index.json', JSON.stringify(articles.map(a => ({ id: a.id, title: a.title, summary: a.summary, category: a.category, path: articlePath(a) }))));
 const indexedPaths = ['/', ...categoryURLs, ...Object.keys(staticPages()).map(s => `/${s}/`), ...articles.filter(a => !a.archivePath).map(articlePath), ...archived.map(([, , path]) => path)];
-await output('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${siteURL && !demo ? indexedPaths.map(path => `<url><loc>${e(canonical(path))}</loc></url>`).join('') : ''}</urlset>`);
-await output('news-sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${siteURL && !demo ? articles.filter(a => !a.archivePath && Date.parse(a.published_at) >= Date.parse(now)-48*3600000 && Date.parse(a.published_at) <= Date.parse(now)).slice(0,1000).map(a => `<url><loc>${e(canonical(articlePath(a)))}</loc><news:news><news:publication><news:name>${e(SITE_NAME)}</news:name><news:language>tr</news:language></news:publication><news:publication_date>${e(a.published_at)}</news:publication_date><news:title>${e(a.title)}</news:title></news:news></url>`).join('') : ''}</urlset>`);
-await output('rss.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${e(SITE_NAME)}</title><link>${e(canonical('/'))}</link><description>Son haberler</description><language>tr</language>${siteURL && !demo ? articles.slice(0,100).map(a => `<item><title>${e(a.title)}</title><link>${e(canonical(articlePath(a)))}</link><guid isPermaLink="false">${e(a.id)}</guid><pubDate>${new Date(a.published_at).toUTCString()}</pubDate><description>${e(a.summary)}</description></item>`).join('') : ''}</channel></rss>`);
-await output('robots.txt', demo ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nDisallow: /yonetim/\nDisallow: /arama/\nSitemap: ${canonical('/sitemap.xml')}\n`);
+await output('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${siteURL && publish ? indexedPaths.map(path => `<url><loc>${e(canonical(path))}</loc></url>`).join('') : ''}</urlset>`);
+await output('news-sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${siteURL && publish ? articles.filter(a => !a.archivePath && Date.parse(a.published_at) >= Date.parse(now)-48*3600000 && Date.parse(a.published_at) <= Date.parse(now)).slice(0,1000).map(a => `<url><loc>${e(canonical(articlePath(a)))}</loc><news:news><news:publication><news:name>${e(SITE_NAME)}</news:name><news:language>tr</news:language></news:publication><news:publication_date>${e(a.published_at)}</news:publication_date><news:title>${e(a.title)}</news:title></news:news></url>`).join('') : ''}</urlset>`);
+await output('rss.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${e(SITE_NAME)}</title><link>${e(canonical('/'))}</link><description>Son haberler</description><language>tr</language>${siteURL && publish ? articles.slice(0,100).map(a => `<item><title>${e(a.title)}</title><link>${e(canonical(articlePath(a)))}</link><guid isPermaLink="false">${e(a.id)}</guid><pubDate>${new Date(a.published_at).toUTCString()}</pubDate><description>${e(a.summary)}</description></item>`).join('') : ''}</channel></rss>`);
+await output('robots.txt', demo || launch ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nDisallow: /yonetim/\nDisallow: /arama/\nSitemap: ${canonical('/sitemap.xml')}\n`);
 await output('_headers', `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'${safeURL(process.env.SUPABASE_URL) ? ` ${new URL(process.env.SUPABASE_URL).origin}` : ''}; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\n/yonetim/*\n  X-Robots-Tag: noindex, nofollow\n/public-config.json\n  Cache-Control: no-cache\n/search-index.json\n  Cache-Control: public, max-age=300\n`);
 await output('_redirects', archived.map(([month]) => `/haber/${month.replace('-', '/')}/:slug/ /arsiv/${month.replace('-', '/')}/#:slug 301`).join('\n') + '\n');
 for (const entry of await readdir(dist, { recursive: true, withFileTypes: true })) {
@@ -103,7 +107,7 @@ for (const entry of await readdir(dist, { recursive: true, withFileTypes: true }
   }
 }
 await writeFile(resolve(cache, 'build-manifest.json'), JSON.stringify(manifest));
-const buildResult={ demo,testFixture:process.env.MERIDYEN_BUILD_TEST==='1',articles: articles.length,rebuilt,files:generated.size,builtAt:new Date().toISOString() };
+const buildResult={ demo,launch,testFixture:process.env.MERIDYEN_BUILD_TEST==='1',articles: articles.length,rebuilt,files:generated.size,builtAt:new Date().toISOString() };
 await writeFile(resolve(cache, 'build-result.json'), JSON.stringify(buildResult,null,2));
 if(process.env.MERIDYEN_BUILD_TEST==='1')await writeFile(resolve(dist,'test-fixture.json'),JSON.stringify(buildResult));
-console.log(`${demo ? 'Gösterim' : 'Yayın'} derlemesi: ${articles.length} haber, ${rebuilt} haber sayfası yazıldı, ${generated.size} dosya.`);
+console.log(`${demo ? 'Gösterim' : launch ? 'Yayına hazırlık' : 'Yayın'} derlemesi: ${articles.length} haber, ${rebuilt} haber sayfası yazıldı, ${generated.size} dosya.`);
