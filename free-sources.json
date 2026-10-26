@@ -1,0 +1,32 @@
+[
+  {
+    "id": "globalvoices",
+    "name": "Global Voices",
+    "feed_url": "https://globalvoices.org/feed/",
+    "category": "Dünya",
+    "language": "en",
+    "active": true,
+    "terms_confirmed": true,
+    "terms_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+    "license_name": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "allowed_host": "globalvoices.org",
+    "path_pattern": "^/[0-9]{4}/[0-9]{2}/[0-9]{2}/",
+    "author_required": true
+  },
+  {
+    "id": "nasa",
+    "name": "NASA",
+    "feed_url": "https://www.nasa.gov/news-release/feed/",
+    "category": "Bilim",
+    "language": "en",
+    "active": true,
+    "terms_confirmed": true,
+    "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "license_name": "NASA haber kullanım koşulları",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "allowed_host": "www.nasa.gov",
+    "path_pattern": "^/news-release/",
+    "author_required": false
+  }
+]

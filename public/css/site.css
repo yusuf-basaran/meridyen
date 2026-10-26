@@ -11,3 +11,4 @@
 
 .rate-credits{font-size:10px!important}.rate-credits a{display:inline-block;min-height:44px;align-content:center;text-decoration:underline}.news-card h2>a{display:block;min-height:44px;align-content:center}
 .latest li h3>a{display:block;min-height:44px;align-content:center}.breadcrumb a,.share-links a,.article-meta a,.article-source a,.footer-bottom a{min-width:44px}
+.source-byline,.source-license{font-size:13px;line-height:1.6;color:var(--gri)}.source-byline{margin:8px 0}.source-excerpt{margin:14px 0}.source-license{margin-top:12px}.source-license a,.source-byline a{text-decoration:underline;text-underline-offset:3px}.source-card .card-copy{padding-bottom:24px}

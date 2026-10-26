@@ -17,17 +17,27 @@ npm run dev
 
 ## Kurulum durumu
 
-### Vercel'de ilk dağıtım
+### Vercel ve ücretsiz kaynak akışı
 
-`vercel.json`, `dist/` çıktısını ve `npm run build:vercel` komutunu tanımlar. Veritabanı kararı ertelendiği için Vercel'deki varsayılan `launch` modu haber içermeyen **Yayına hazırlanıyoruz** sayfasını üretir. Veritabanına bağlanmaz, gösterim haberlerini kullanmaz, tarayıcıya veritabanı yapılandırması çıkarmaz; sayfalar `noindex` ve `robots.txt` ile arama motorlarına kapalıdır. Kaynakları etkinleştirmez. Yerelde aynı hazırlık `npm run build:launch` ile denenebilir.
+Vercel varsayılanı artık `sources` modudur: Global Voices’in CC BY 3.0 kapsamındaki metinleri ve NASA’nın haber açıklamalarından özgün başlıklar/kısa alıntılar gösterilir. İngilizce oldukları belirtilir; yazar, özgün haber bağlantısı ve lisans/koşullar her kartta bulunur. Metinler en fazla 60 kelimelik alıntılardır; çeviri veya Meridyen tarafından yazılmış haberler olarak sunulmaz. Fotoğraflar alınmaz. Başlıklar, kategori sayfaları ve arama JavaScript olmadan da kullanılabilir; arama filtrelemesi JavaScript gerektirir.
 
-`SITE_URL` varsa geçerli HTTPS kök adresi kullanılır. Yoksa Vercel'in sistem değişkenlerinden üretimde `VERCEL_PROJECT_PRODUCTION_URL`, önizlemede `VERCEL_URL` alınır; böylece eksik `SITE_URL` ilk dağıtımı durdurmaz. Sistem değişkenleri kapalıysa hazırlık yine derlenir fakat canonical adres üretilmez. Vercel'de **Enable access to System Environment Variables** açık tutulmalıdır. Özel alan adı kullanıldığında `SITE_URL` açıkça tanımlanabilir. [Vercel sistem değişkenleri](https://vercel.com/docs/environment-variables/system-environment-variables).
+Kaynak listesi `free-sources.json`, güncel kayıtlar `data/free-feed.json` içindedir. Bu akış ayrı bir veritabanı, servis anahtarı veya model API’si gerektirmez. Yeni bir veritabanı hizmetine geçiş yapılmamıştır. Eski dokuz ajans kaynağı `sources.json` içinde pasif kalır. Üretilen haberlerin mevcut inceleme/yayın kilitleri değiştirilmez.
 
-Gerçek haber yayınına geçişte veritabanı, künye ve kaynak izinleri tamamlandıktan sonra Vercel ortamında `MERIDYEN_BUILD_MODE=production` seçilir. Gerçek mod, mevcut veritabanı ve künye kontrollerini uygular; hata durumunda hazırlığa veya gösterime geri dönmez. `npm run build` de gerçek derleme olarak kalır. Haberleri yenileyen mevcut zamanlanmış akış Cloudflare içindir; Vercel için haber güncelleme dağıtımları ayrıca bağlanmadan otomatik haber yayını başlamaz.
+```sh
+npm run sources:refresh
+npm run build:sources
+npm run preview
+```
 
-Vercel `/api/rates` uç noktası, Cloudflare'daki kur hesaplamasını paylaşır ve Vercel CDN'de beş dakika önbelleklenir. Cloudflare'ın `_headers` dosyası Vercel'de uygulanmadığından güvenlik başlıkları `vercel.json` içinde de tanımlıdır. Gerçek yayın aylarında arşiv yönlendirmeleri Cloudflare `_redirects` biçimindedir; Vercel gerçek yayın entegrasyonunda ayrıca aktarılmalıdır.
+**Ücretsiz kaynak akışı** GitHub Actions işi yaklaşık 30 dakikada bir RSS’leri kontrol eder. Değişiklik varsa yalnızca veri dosyasını commit eder; bağlı Vercel Git entegrasyonu dağıtımı yeniler. Zamanlama tam dakikada çalışma garantisi vermez. Hata veren kaynağın son kaydı korunur; 14 günden eski ve gelecekteki kayıtlar gösterilmez. Aynı içerik için gereksiz commit atılmaz. Global Voices Türkçe’nin son kaydı 2021 tarihli olduğu için alınmadı; VOA’da üçüncü taraf ajans içeriğini güvenilir biçimde ayıran bir akış doğrulanamadığından eklenmedi. [Kaynak incelemesi](docs/ucretsiz-kaynaklar.md).
 
-Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikleri, yönetim paneli, kur uç noktası ve yayın iş akışları hazırlanmıştır. Yerel SQL testleri gerçek PostgreSQL motorunun PGlite sürümünde çalışır. Cloudflare'da `meridyen` Pages projesi `main` dalıyla oluşturuldu; hedef adres `https://meridyen.pages.dev`. Henüz uzak Supabase projesine migration uygulanmamış, site dağıtılmamıştır. Mevcut bağlı başka uygulamaların projeleri değiştirilmemiştir.
+`vercel.json`, `dist/` çıktısını ve `npm run build:vercel` komutunu tanımlar. `SITE_URL` açıkça verilmezse Vercel sistem değişkenlerinden üretimde `VERCEL_PROJECT_PRODUCTION_URL`, önizlemede `VERCEL_URL` kullanılır. Sistem değişkenleri kapalıysa kaynak/hazırlık derlemesi canonical adres olmadan tamamlanır. [Vercel sistem değişkenleri](https://vercel.com/docs/environment-variables/system-environment-variables).
+
+`MERIDYEN_BUILD_MODE=launch` boş hazırlık sayfasını seçer. `MERIDYEN_BUILD_MODE=production` ise veritabanından incelemesi tamamlanmış haberleri derler; gerçek mod eksik veritabanı veya künye durumunda kaynak/gösterim moduna geri dönmez. Künye ve tam yayın kurulumu tamamlanana kadar kaynak/hazırlık modları `noindex` ve `robots.txt` ile arama motorlarına kapalı tutulur. `npm run build` gerçek derleme olarak kalır.
+
+`/api/rates` Vercel ve Cloudflare’da aynı kur hesaplamasını kullanır. Vercel güvenlik başlıkları `vercel.json` içinde tanımlıdır. Mevcut veritabanlı zamanlanmış haber/yayın akışı hâlâ Cloudflare içindir; ücretsiz kaynak akışı bu akıştan bağımsızdır. Üretimde aylık haber arşivleri kullanılacaksa Cloudflare `_redirects` yönlendirmeleri Vercel’e ayrıca aktarılmalıdır.
+
+Tasarım, statik derleme, SQL şeması, RLS, haber toplama/yazma/inceleme betikleri, yönetim paneli, kur uç noktası ve yayın iş akışları hazırlanmıştır. Yerel SQL testleri gerçek PostgreSQL motorunun PGlite sürümünde çalışır. Cloudflare'da `meridyen` Pages projesi `main` dalıyla oluşturuldu; hedef adres `https://meridyen.pages.dev`. Henüz uzak Supabase projesine migration uygulanmamış ve Cloudflare dağıtımı yapılmamıştır. Vercel’de ilk hazırlık dağıtımı 26 Ekim’de başarıyla tamamlandı. Mevcut bağlı başka uygulamaların projeleri değiştirilmemiştir.
 
 Canlı kurulum için Meridyen'e ait Supabase projesi, Cloudflare hesabı/projesi, servis anahtarları, gerçek künye bilgileri ve kaynakların kullanım izni gerekir. Varsayılanlar: `AUTO_PUBLISH=false`, reklam kapalı, kaynaklar pasif, yayın iş akışı kapalı. Yönetici girişi, bağlantı eklenene kadar açık bir yapılandırma mesajı gösterir.
 

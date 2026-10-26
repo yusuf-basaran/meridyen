@@ -9,3 +9,4 @@ artifacts/
 supabase/.temp/
 supabase/.branches/
 *.log
+data/*.tmp

@@ -18,8 +18,9 @@ test('Geçersiz site adresi Vercel adresiyle gizlenmez; yalnızca HTTPS kök adr
   }
 });
 
-test('Vercel ilk dağıtım modu haber içermeyen hazırlıktır; gerçek yayın açıkça seçilir', () => {
-  assert.equal(vercelBuildMode({}), 'launch');
+test('Vercel varsayılanı ücretsiz kaynak akışıdır; hazırlık ve gerçek yayın ayrıca seçilir', () => {
+  assert.equal(vercelBuildMode({}), 'sources');
+  assert.equal(vercelBuildMode({ MERIDYEN_BUILD_MODE: 'launch' }), 'launch');
   assert.equal(vercelBuildMode({ MERIDYEN_BUILD_MODE: 'production' }), 'production');
   assert.throws(() => vercelBuildMode({ MERIDYEN_BUILD_MODE: 'demo' }));
 });

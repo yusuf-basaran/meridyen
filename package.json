@@ -10,6 +10,8 @@
     "build": "node --use-env-proxy --env-file-if-exists=.env scripts/build.mjs",
     "build:demo": "node scripts/build.mjs --demo",
     "build:launch": "node --use-env-proxy --env-file-if-exists=.env scripts/build.mjs --launch",
+    "build:sources": "node --use-env-proxy --env-file-if-exists=.env scripts/build.mjs --sources",
+    "sources:refresh": "node --use-env-proxy scripts/refresh-free-feed.mjs",
     "build:vercel": "node --use-env-proxy --env-file-if-exists=.env scripts/build-vercel.mjs",
     "assets": "node scripts/assets.mjs",
     "preview": "node scripts/preview.mjs",

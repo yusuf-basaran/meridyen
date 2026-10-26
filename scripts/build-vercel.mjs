@@ -4,7 +4,7 @@ import { vercelBuildMode } from '../lib/build-settings.mjs';
 const mode = vercelBuildMode();
 console.log(`Vercel derleme modu: ${mode}.`);
 for (const args of [
-  ['scripts/build.mjs', ...(mode === 'launch' ? ['--launch'] : [])],
+  ['scripts/build.mjs', ...(mode === 'production' ? [] : [`--${mode}`])],
   ['scripts/audit.mjs']
 ]) {
   const result = spawnSync(process.execPath, ['--use-env-proxy', ...args], { stdio: 'inherit', env: process.env });

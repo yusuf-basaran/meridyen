@@ -16,7 +16,7 @@ const server=http.createServer((req,res)=>{
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const out='artifacts/production-fixture';
-async function build({launch=false}={}){await new Promise((resolve,reject)=>{const process=spawn('node',['scripts/build.mjs','--out',out,...(launch?['--launch']:[])],{env:{...globalThis.process.env,SUPABASE_URL:launch?'https://unreachable.invalid':`http://127.0.0.1:${server.address().port}`,SUPABASE_SERVICE_ROLE_KEY:'fixture-not-a-secret',SUPABASE_ANON_KEY:'sb_publishable_fixture',SITE_URL:'https://meridyen.test',MERIDYEN_BUILD_TEST:'1'},stdio:['ignore','pipe','pipe']});let output='';process.stdout.on('data',chunk=>output+=chunk);process.stderr.on('data',chunk=>output+=chunk);process.on('exit',code=>code===0?resolve():reject(new Error(output)));});}
+async function build({launch=false,sources=false}={}){await new Promise((resolve,reject)=>{const process=spawn('node',['scripts/build.mjs','--out',out,...(launch?['--launch']:[]),...(sources?['--sources','--feed-file','artifacts/free-feed-fixture.json']:[])],{env:{...globalThis.process.env,SUPABASE_URL:launch||sources?'https://unreachable.invalid':`http://127.0.0.1:${server.address().port}`,SUPABASE_SERVICE_ROLE_KEY:'fixture-not-a-secret',SUPABASE_ANON_KEY:'sb_publishable_fixture',SITE_URL:'https://meridyen.test',MERIDYEN_BUILD_TEST:'1'},stdio:['ignore','pipe','pipe']});let output='';process.stdout.on('data',chunk=>output+=chunk);process.stderr.on('data',chunk=>output+=chunk);process.on('exit',code=>code===0?resolve():reject(new Error(output)));});}
 const report={};
 try{
   await build();
@@ -45,6 +45,26 @@ try{
   assert.equal(await readFile(`${out}/robots.txt`,'utf8'),'User-agent: *\nDisallow: /\n');
   assert.ok(!(await readFile(`${out}/sitemap.xml`,'utf8')).includes('<url>'));
   assert.ok(!(await readFile(`${out}/rss.xml`,'utf8')).includes('<item>'));
-  Object.assign(report,{passed:true,publishedOnly:true,pagination:true,incrementalUnchanged:0,incrementalBodyChange:1,unpublishCleanup:true,xml:true,clientSecretExcluded:true,launchWithoutDatabase:true,launchClearsOldArticles:true,launchNoindex:true,fixtureOnly:true,finishedAt:new Date().toISOString()});
+  await mkdir('artifacts',{recursive:true});
+  await writeFile('artifacts/free-feed-fixture.json',JSON.stringify({updatedAt:publishedAt,items:[{sourceId:'globalvoices',title:'Original source title',summary:'An excerpt of the original source.',author:'Original Writer',url:'https://globalvoices.org/2026/10/26/fixture/',publishedAt},{sourceId:'nasa',title:'Original science title',summary:'The source explains its science work.',author:'NASA Writer',url:'https://www.nasa.gov/news-release/fixture/',publishedAt}]}));
+  await build({sources:true});
+  const sourceHome=await readFile(`${out}/index.html`,'utf8');
+  assert.ok(sourceHome.includes('Original source title'));
+  assert.ok(sourceHome.includes('Original Writer'));
+  assert.ok(sourceHome.includes('CC BY 3.0'));
+  assert.ok(sourceHome.includes('RSS’den kısaltılmış alıntı'));
+  assert.ok(sourceHome.includes('lang="en"'));
+  assert.ok(sourceHome.includes('noindex, nofollow'));
+  assert.ok(!sourceHome.includes('NewsArticle'));
+  const sourceIndex=JSON.parse(await readFile(`${out}/search-index.json`,'utf8'));
+  assert.equal(sourceIndex.length,2);
+  assert.ok(sourceIndex.every(item=>item.path.startsWith('https://')&&item.author&&item.licenseURL));
+  assert.ok((await readFile(`${out}/kategori/bilim/index.html`,'utf8')).includes('Original science title'));
+  assert.ok((await readFile(`${out}/arama/index.html`,'utf8')).includes('Original Writer'));
+  const sourceRSS=await readFile(`${out}/rss.xml`,'utf8');
+  assert.ok(sourceRSS.includes('Original Writer'));
+  assert.ok(sourceRSS.includes('https://creativecommons.org/licenses/by/3.0/'));
+  assert.equal(JSON.parse(await readFile(`${out}/public-config.json`,'utf8')).supabaseKey,'');
+  Object.assign(report,{passed:true,publishedOnly:true,pagination:true,incrementalUnchanged:0,incrementalBodyChange:1,unpublishCleanup:true,xml:true,clientSecretExcluded:true,launchWithoutDatabase:true,launchClearsOldArticles:true,launchNoindex:true,freeSourcesWithoutDatabase:true,freeSourceAttribution:true,freeSourceSearch:true,fixtureOnly:true,finishedAt:new Date().toISOString()});
   await mkdir('artifacts',{recursive:true});await writeFile('artifacts/build-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{await new Promise(resolve=>server.close(resolve));}

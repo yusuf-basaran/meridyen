@@ -15,6 +15,14 @@ function render(rows) {
     const tag = document.createElement('span'); tag.className = 'eyebrow'; tag.textContent = row.category;
     const heading = document.createElement('h2'); const link = document.createElement('a'); link.href = row.path; link.textContent = row.title; heading.append(link);
     const summary = document.createElement('p'); summary.className = 'search-result-summary'; summary.textContent = row.summary;
+    if (row.sourceName) {
+      const byline = document.createElement('p'); byline.className = 'source-byline'; byline.textContent = `${row.sourceName} · ${row.author}`;
+      const sourceLink = document.createElement('a'); sourceLink.href = row.path; sourceLink.textContent = 'Kaynakta oku'; sourceLink.target = '_blank'; sourceLink.rel = 'noopener';
+      const license = document.createElement('a'); license.href = row.licenseURL; license.textContent = row.licenseName; license.target = '_blank'; license.rel = 'license noopener';
+      const note = document.createElement('p'); note.className = 'source-license'; note.append(license, ' · RSS’den kısaltılmış alıntı · ', sourceLink);
+      link.target = '_blank'; link.rel = 'noopener'; heading.lang = row.language; summary.lang = row.language;
+      copy.append(byline, tag, heading, summary, note); article.append(img, copy); results.append(article); continue;
+    }
     copy.append(tag, heading, summary); article.append(img, copy); results.append(article);
   }
 }
@@ -26,7 +34,7 @@ async function search(query) {
       const response = await fetch('/search-index.json');
       if (!response.ok) throw new Error();
       const entries = await response.json();
-      index = new MiniSearch({ fields: ['title','summary'], storeFields: ['title','summary','category','path'], processTerm: term => term.toLocaleLowerCase('tr-TR') });
+      index = new MiniSearch({ fields: ['title','summary'], storeFields: ['title','summary','category','path','sourceName','author','language','licenseName','licenseURL'], processTerm: term => term.toLocaleLowerCase('tr-TR') });
       index.addAll(entries);
     }
     const rows = index.search(query, { prefix: true, fuzzy: .15, combineWith: 'AND', boost: { title: 2 } }).slice(0, 60);
