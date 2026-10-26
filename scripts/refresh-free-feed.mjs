@@ -7,7 +7,7 @@ try {
   let previous = {};
   try { previous = JSON.parse(await readFile(path, 'utf8')); } catch { /* İlk kaynak yenilemesi. */ }
   const snapshot = await refreshFreeFeed(previous);
-  if (!snapshot.items?.length && snapshot.sources?.every(source => !source.ok)) throw new Error('Ücretsiz kaynaklara erişilemedi; önceki kayıt korunuyor.');
+  if (!Array.isArray(previous.items) && !snapshot.items?.length && snapshot.sources?.every(source => !source.ok)) throw new Error('İlk ücretsiz kaynak akışı alınamadı.');
   await mkdir(new URL('../data/', import.meta.url), { recursive: true });
   await writeFile(new URL(`${path.href}.tmp`), JSON.stringify(snapshot, null, 2) + '\n');
   await rename(new URL(`${path.href}.tmp`), path);

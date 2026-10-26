@@ -56,6 +56,9 @@ test('Kaynak hatası diğer kaynağı durdurmaz; eski kayıtlar 14 gün sonra d�
   assert.equal(snapshot.sources[0].ok,false);
   assert.equal(snapshot.sources[1].ok,true);
   assert.equal(snapshotItems(snapshot,Date.parse('2026-12-01')).length,0);
+  const expired=await refreshFreeFeed(snapshot,{now:'2026-12-01T00:00:00Z',fetcher:async()=>{throw new Error('outage');}});
+  assert.equal(expired.items.length,0);
+  assert.notEqual(expired,snapshot);
   const same=await refreshFreeFeed(snapshot,{now,fetcher:async url=>{
     if(url.includes('globalvoices'))throw new Error('timeout');
     return [{...item,url:'https://www.nasa.gov/news-release/test/',author:'NASA Writer'}];
