@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-10-27T14:22:25.304Z",
+  "updatedAt": "2026-10-27T23:09:09.357Z",
   "items": [
+    {
+      "id": "free-globalvoices-895cb373e8217a57",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "ProBox",
+      "title": "Warning Signals: Venezuela and the Risk of AI-Powered Chinese Digital Authoritarianism",
+      "summary": "A report by the Australian think tank ASPI warns that Venezuela could integrate Chinese artificial intelligence into its surveillance system and expand its digital control capabilities.",
+      "url": "https://globalvoices.org/2026/10/27/warning-signals-venezuela-and-the-risk-of-ai-powered-chinese-digital-authoritarianism/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-27T21:10:54.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-nasa-71e6962cecf66d3a",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Lauren E. Low",
+      "title": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
+      "summary": "The four volunteers who lived and worked in a simulated NASA Mars mission for more than a year will exit their habitat on Saturday, Oct. 31, after 378 days of isolation in a facility at the agency’s Johnson Space Center in Houston. Health and performance data collected from the simulation can help NASA develop methods […]",
+      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-10-27T19:27:22.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-f2c0a64e92257878",
       "sourceId": "globalvoices",
@@ -30,21 +60,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-89b82efc97f5f84f",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jeanne Neal",
-      "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-      "summary": "Members of the media are invited to tour a new lunar landing simulator at NASA’s Ames Research Center in California's Silicon Valley on Thursday, Oct. 29, and Friday, Oct. 30.",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-moon-landing-simulation-experience-in-california/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-26T17:13:44.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-108bf48e99096c46",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-23T08:51:01.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-7904031000383720",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices Caribbean",
-      "title": "Riddims against copyright",
-      "summary": "Dancehall’s interactive, collaborative nature doesn’t treat a work as isolated or even something that is “finished.” Iteration is a part of the creative process that is decided by the next function or party.",
-      "url": "https://globalvoices.org/2026/10/22/riddims-against-copyright/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-22T23:55:44.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
