@@ -17,10 +17,11 @@ export const config = {
   scoreThreshold: 80,
   archiveAfterFiles: 18000,
   socialHourlyLimit: 6,
-  contact: { owner: '', email: '', address: '' },
+  contact: { owner: 'Yusuf BAŞARAN', email: 'yusufbasarann63@gmail.com', address: '' },
   deployment: {
     cloudflareAccountId: '2f25c9df6a3712f6e2a176ad50ef4ea8',
     pagesProject: 'meridyen',
+    vercelSiteURL: 'https://meridyen-ebon.vercel.app',
     siteURL: 'https://meridyen.pages.dev'
   },
   providers: {

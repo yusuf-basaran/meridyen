@@ -1,0 +1,61 @@
+name: Canlı Gemini denemesi
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/live-source-check.mjs'
+      - 'scripts/check-live-ai.mjs'
+      - '.github/workflows/live-ai-check.yml'
+permissions:
+  contents: read
+concurrency:
+  group: live-ai-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-fund
+      - name: Yerel kuralları ve yayın kilitlerini sına
+        run: npm test
+      - name: Güncel ücretsiz kaynakları al
+        run: npm run sources:refresh
+      - name: NASA kaydıyla sınırlı canlı deneme
+        run: node --use-env-proxy scripts/check-live-ai.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Deneme raporunu sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: canli-gemini-denemesi
+          path: artifacts/live-ai-check.json
+          retention-days: 7
+  public-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Kamuya açık yayını kontrol et
+        run: node --use-env-proxy scripts/check-public-site.mjs
+      - name: Site raporunu sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: canli-site-kontrolu
+          path: artifacts/public-site-check.json
+          retention-days: 7

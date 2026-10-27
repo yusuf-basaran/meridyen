@@ -93,6 +93,12 @@ Gemini hesabında ücretsiz katmanda kalınmalıdır; kod, API anahtarının ba�
 
 **Mevcut Gemini/Groq düzeni otomatik yayını açmaz.** Aynı Gemini modeline iki ayrı istem vermek iki bağımsız sağlayıcı sayılmaz. Gemini + Groq da yazar ve iki denetçi için gereken üç ayrı sağlayıcı şartını karşılamaz. Kaynakla uyumlu görünen metinler dahi `needs_review` durumunda kalır. Canlı değerlendirme başarılı olsa bile bu yapılandırmada yayın kilidi kapalıdır. SQL’deki kaynak ve inceleme kilitleri korunur. Ücretsiz kaynak akışı bu model incelemesine henüz bağlanmamıştır; veritabanı kurulumu ertelenmiştir.
 
+### Canlı Gemini başlangıç denemesi
+
+**Canlı Gemini denemesi** Actions işi, güncel bir NASA kaydıyla kısa Türkçe taslak ve iki gerçek model incelemesi üretir. En fazla üç üretim isteği yapar; veritabanı gerektirmez. Sonuç yalnızca Actions raporunda tutulur, haber olarak yayımlanmaz. Aynı sağlayıcıdan gelen incelemeler bağımsız teyit sayılmaz; otomatik yayın kilidi kapalı kalır. [Ayrıntılar](docs/canli-gemini-denemesi.md).
+
+27 Ekim’de site sahibinin paylaştığı ad ve kamuya açık iletişim e-postası kaydedildi. Fiziki iletişim adresi henüz verilmediğinden boş tutuldu; tam yayın/künye kontrolü tamamlanmış sayılmaz.
+
 ## Haber ve yayın akışı
 
 ```sh
