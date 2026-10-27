@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T23:06:01.889Z",
+  "updatedAt": "2026-10-27T07:42:23.415Z",
   "items": [
     {
       "id": "free-globalvoices-114ef2a3c4d65d8a",
@@ -27,21 +27,6 @@
       "category": "Bilim",
       "language": "en",
       "publishedAt": "2026-10-26T17:13:44.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-4e6f5c4fdf0aa653",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jennifer M. Dooren",
-      "title": "NASA, USDA Sign Agreement Advancing Earth Science, Agriculture",
-      "summary": "NASA and the U.S. Department of Agriculture (USDA) have signed a Memorandum of Understanding expanding cooperation in Earth observation, geospatial analytics, and advanced data technologies, supporting USDA’s data modernization plan for United States agriculture. “NASA develops some of the most advanced sensing, computing, and analytical capabilities in the world, and we should put those tools […]",
-      "url": "https://www.nasa.gov/news-release/nasa-usda-sign-agreement-advancing-earth-science-agriculture/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-26T13:54:25.000Z",
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
@@ -191,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 1
     }
   ]
 }
