@@ -4,14 +4,17 @@ import { checkLiveSource } from '../lib/live-source-check.mjs';
 import { sanitizeError } from '../lib/utils.mjs';
 
 let requests = 0;
+const maxRequests = Number(process.env.LIVE_AI_REQUEST_LIMIT || 3);
+if (![1, 3].includes(maxRequests)) throw new Error('Deneme sınırı 1 veya 3 olmalı.');
 const apiAttempts = [];
 const auditedFetch = async (url, options) => {
   const response = await fetch(url, options);
   if (options?.method === 'POST') {
-    const entry = { httpStatus: response.status };
+    const entry = { httpStatus: response.status, model: new URL(url).pathname.split('/').at(-1).split(':')[0] };
     try {
       const body = await response.clone().json();
       if (typeof body.error?.status === 'string') entry.providerStatus = body.error.status;
+      if (typeof body.error?.message === 'string') entry.message = sanitizeError(body.error.message);
       const usage = body.usageMetadata;
       if (usage) entry.tokens = Object.fromEntries(
         ['promptTokenCount', 'candidatesTokenCount', 'totalTokenCount']
@@ -26,7 +29,7 @@ const auditedFetch = async (url, options) => {
 const complete = createCompleter({
   fetcher: auditedFetch,
   // Separate bounded test: no database or production quota RPC.
-  reserve: async provider => provider === 'gemini' && requests < 3 ? (++requests, true) : false
+  reserve: async provider => provider === 'gemini' && requests < maxRequests ? (++requests, true) : false
 });
 let report;
 try {
@@ -44,6 +47,7 @@ try {
   process.exitCode = 1;
 }
 report.requests = requests;
+report.requestLimit = maxRequests;
 report.apiAttempts = apiAttempts;
 await mkdir(new URL('../artifacts/', import.meta.url), { recursive: true });
 await writeFile(new URL('../artifacts/live-ai-check.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
@@ -52,7 +56,7 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   const lines = [
     '## Canlı Gemini denemesi', '',
     '- Durum: ' + report.status,
-    '- İstek sayısı: ' + requests + ' / 3',
+    '- İstek sayısı: ' + requests + ' / ' + maxRequests,
     '- Model yanıtları: ' + (report.modelResponsesComplete ? 'tamamlandı' : 'eksik'),
     '- Kaynakla metin uyumu: ' + (report.contentPass ? 'uyumlu' : 'editör incelemesi gerekli'),
     '- Bağımsız denetim: ' + (report.independent ? 'var' : 'sağlanmadı'),

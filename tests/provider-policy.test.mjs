@@ -62,3 +62,29 @@ test('Gemini veya Gemini/Groq incelemeleri kaynakla uyumlu olsa da otomatik yay�
   }
   assert.equal(await autoPublishAllowed(),false);
 });
+
+test('Hesap erişimi ve faturalama hatası aynı sağlayıcının diğer modellerinde tekrarlanmaz', async () => {
+  const previous=process.env.GEMINI_API_KEY;process.env.GEMINI_API_KEY='fixture-key';
+  try{
+    for(const [status,code] of [[401,'authentication'],[402,'billing'],[403,'forbidden']]){
+      let requests=0,reservations=0;
+      const complete=createCompleter({
+        getModels:async()=>['gemini-first','gemini-second'],
+        reserve:async()=>{reservations++;return true;},
+        fetcher:async()=>{requests++;return new Response('',{status});},
+        sleep:async()=>{throw new Error('Hesap hatası tekrar denenmemeli');}
+      });
+      await assert.rejects(complete({role:'writer',system:'test',user:'[]'}),error=>error.code===code);
+      assert.equal(requests,1);assert.equal(reservations,1);
+    }
+  }finally{previous===undefined?delete process.env.GEMINI_API_KEY:process.env.GEMINI_API_KEY=previous;}
+});
+
+test('Tükenen bütçede model listesinde gereksiz rezervasyon yapılmaz',async()=>{
+  const previous=process.env.GEMINI_API_KEY;process.env.GEMINI_API_KEY='fixture-key';let reservations=0;
+  try{
+    const complete=createCompleter({getModels:async()=>['gemini-first','gemini-second'],reserve:async()=>{reservations++;return false;},fetcher:async()=>{throw new Error('İstek gönderilmemeli');}});
+    await assert.rejects(complete({role:'writer',system:'test',user:'[]'}),error=>error.code==='budget');
+    assert.equal(reservations,1);
+  }finally{previous===undefined?delete process.env.GEMINI_API_KEY:process.env.GEMINI_API_KEY=previous;}
+});

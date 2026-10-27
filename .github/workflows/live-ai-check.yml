@@ -1,12 +1,12 @@
 name: Canlı Gemini denemesi
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'lib/live-source-check.mjs'
-      - 'scripts/check-live-ai.mjs'
-      - '.github/workflows/live-ai-check.yml'
+    inputs:
+      request_limit:
+        description: 'En fazla üretim isteği (1: hata tanılama; 3: taslak ve iki inceleme)'
+        type: choice
+        options: ['3', '1']
+        default: '3'
 permissions:
   contents: read
 concurrency:
@@ -33,6 +33,7 @@ jobs:
         run: node --use-env-proxy scripts/check-live-ai.mjs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LIVE_AI_REQUEST_LIMIT: ${{ inputs.request_limit || '3' }}
       - name: Deneme raporunu sakla
         if: always()
         uses: actions/upload-artifact@v4
