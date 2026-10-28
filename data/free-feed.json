@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-27T23:09:09.357Z",
+  "updatedAt": "2026-10-28T08:57:50.336Z",
   "items": [
+    {
+      "id": "free-globalvoices-a50a41dff26fbffc",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Masudul Zarif",
+      "title": "Bangladesh weighs tougher cyber law as AI-generated abuse targets women",
+      "summary": "Bangladesh’s proposed cyber law targets AI-generated fakes, but critics warn broad provisions on rumours, defamation and disinformation could revive censorship and threaten online free expression, even as victims need protection.",
+      "url": "https://globalvoices.org/2026/10/28/bangladesh-weighs-tougher-cyber-law-as-ai-generated-abuse-targets-women/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-28T07:51:42.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-895cb373e8217a57",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-23T22:05:56.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-dbc8ea5ed228a00e",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Guest Contributor",
-      "title": "Complementary forces: Why activism needs art to drive action",
-      "summary": "\"Artistic activism uses the emotional experience of art as a prompt for action and directs that action towards change, turning a complex problem into a clear public message.\"",
-      "url": "https://globalvoices.org/2026/10/23/complementary-forces-why-activism-needs-art-to-drive-action/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-23T08:51:01.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
