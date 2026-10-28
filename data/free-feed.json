@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-28T08:57:50.336Z",
+  "updatedAt": "2026-10-28T20:58:37.243Z",
   "items": [
+    {
+      "id": "free-globalvoices-b61e20d7505c9517",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Announcements",
+      "title": "Support Global Voices’ Spotlight: Justice as infrastructure",
+      "summary": "Global Voices is partnering with The Hague Institute for Innovation of Law (HiiL) to highlight the ways justice functions as critical infrastructure for any society.",
+      "url": "https://globalvoices.org/2026/10/28/support-global-voices-spotlight-justice-as-infrastructure/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-28T15:25:02.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-a50a41dff26fbffc",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-24T08:55:06.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-30c8865a8ad6e19a",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nurbek Bekmurzaev",
-      "title": "In Bosnia and Herzegovina, children with Down syndrome are using a video game to safely navigate the internet",
-      "summary": "Being able to use the internet safely is also about being able to participate in everyday life.",
-      "url": "https://globalvoices.org/2026/10/23/in-bosnia-and-herzegovina-children-with-down-syndrome-are-using-a-video-game-to-safely-navigate-the-internet/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-23T22:05:56.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
