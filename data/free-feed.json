@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-29T19:49:35.880Z",
+  "updatedAt": "2026-10-29T23:54:28.745Z",
   "items": [
+    {
+      "id": "free-globalvoices-22e7bfbd65e9c6e6",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Daria Dergacheva",
+      "title": "A digital publication sheds light on Turkey’s prison system",
+      "summary": "“For the relatives of people in prison, as well as for national and international human rights organizations and agencies, the information provided by the Prison Agenda publication can be vital.”",
+      "url": "https://globalvoices.org/2026/10/29/a-digital-publication-sheds-light-on-turkeys-prison-system/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-29T23:06:48.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-7e490cd78d58f532",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-25T16:00:16.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-872a6e9cbff4a6e7",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Freisy González",
-      "title": "Queer mediums of the cult of María Lionza are redefining the gender binary in Venezuela’s sacred mountain",
-      "summary": "An ethnographic look at Venezuela's María Lionza cult, examining how LGBTQ+ mediums challenge traditional gender roles and face discrimination while channeling diverse spiritual entities",
-      "url": "https://globalvoices.org/2026/10/25/queer-mediums-of-the-cult-of-maria-lionza-are-redefining-the-gender-binary-in-venezuelas-sacred-mountain/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-25T09:23:17.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
