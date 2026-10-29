@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-29T06:58:09.792Z",
+  "updatedAt": "2026-10-29T14:09:28.201Z",
   "items": [
+    {
+      "id": "free-globalvoices-d8be33690e640182",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Nurbek Bekmurzaev",
+      "title": "In Albania, rural youth are campaigning to solve local environmental problems",
+      "summary": "Their phones and creativity are enough when they have a clear purpose and guidance.",
+      "url": "https://globalvoices.org/2026/10/29/in-albania-rural-youth-are-campaigning-to-solve-local-environmental-problems/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-29T13:40:53.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-b61e20d7505c9517",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-24T18:11:42.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-6cf4c7275843602c",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Fernanda Canofre",
-      "title": "In Brazil’s elections, big techs’ transparency and cooperation policies translate as governance washing, according to this expert",
-      "summary": "“Under normal conditions, this is already serious enough, because the platform rules over the information flow in a society, but when you apply it to an electoral dispute, it's even more serious.”",
-      "url": "https://globalvoices.org/2026/10/24/in-brazils-elections-big-techs-transparency-and-cooperation-policies-translate-as-governance-washing-according-to-this-expert/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-24T08:55:06.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
