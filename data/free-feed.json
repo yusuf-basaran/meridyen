@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-29T14:09:28.201Z",
+  "updatedAt": "2026-10-29T19:49:35.880Z",
   "items": [
+    {
+      "id": "free-globalvoices-7e490cd78d58f532",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Exile Hub",
+      "title": "A Myanmar journalist’s reflection: ‘When other people’s pain becomes part of you’",
+      "summary": "\"Four years later, after witnessing so many painful stories, I have learned that telling other people’s stories also requires learning how to care for myself.\"",
+      "url": "https://globalvoices.org/2026/10/29/a-myanmar-journalists-reflection-when-other-peoples-pain-becomes-part-of-you/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-29T18:13:03.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-d8be33690e640182",
       "sourceId": "globalvoices",
@@ -135,21 +150,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-653445f927751507",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "Big Tech and authoritarian states: Belarus",
-      "summary": "In the latest GV podcast, we discussed why Russia restricts access to many social media services, while Belarus does not impose comparable restrictions; censorship, surveillance, and digital authoritarianism — Belarusian style.",
-      "url": "https://globalvoices.org/2026/10/24/big-tech-and-authoritarian-states-belarus/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-24T18:11:42.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -160,7 +160,7 @@
     },
     {
       "sourceId": "nasa",
-      "ok": true,
+      "ok": false,
       "items": 0
     }
   ]
