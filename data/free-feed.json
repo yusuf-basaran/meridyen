@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T20:58:37.243Z",
+  "updatedAt": "2026-10-29T06:58:09.792Z",
   "items": [
     {
       "id": "free-globalvoices-b61e20d7505c9517",
@@ -45,21 +45,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-71e6962cecf66d3a",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Lauren E. Low",
-      "title": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
-      "summary": "The four volunteers who lived and worked in a simulated NASA Mars mission for more than a year will exit their habitat on Saturday, Oct. 31, after 378 days of isolation in a facility at the agency’s Johnson Space Center in Houston. Health and performance data collected from the simulation can help NASA develop methods […]",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-27T19:27:22.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-f2c0a64e92257878",
@@ -176,7 +161,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 0
     }
   ]
 }
