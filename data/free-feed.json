@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-10-30T17:10:23.719Z",
+  "updatedAt": "2026-10-30T21:41:42.835Z",
   "items": [
+    {
+      "id": "free-nasa-41fa33a940a90fd4",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Releases MAX POWER Key Events for Media, Participants",
+      "summary": "AmAmerica’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running through Sunday, Nov. 8, hosted on and near the agency’s Kennedy Space Center in Florida. Through multiple park experiences at MAX POWER, NASA and a variety of external collaborators […]",
+      "url": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-10-30T19:31:02.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-globalvoices-34b46e8b2025248c",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Guest Contributor",
+      "title": "When chatbots become ‘answer engines’: AI, geopolitics and truth",
+      "summary": "As AI chatbots become everyday sources of information, research from Kosovo raises questions about how these systems present and sometimes distort geopolitical narratives.",
+      "url": "https://globalvoices.org/2026/10/30/when-chatbots-become-answer-engines-ai-geopolitics-and-truth/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-30T19:30:47.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-cc3f8dae9378dc99",
       "sourceId": "globalvoices",
@@ -60,21 +90,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-6a8e8f4a60c54205",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Lauren E. Low",
-      "title": "NASA Names Troy Asher Armstrong Flight Research Center Director",
-      "summary": "NASA Administrator Jared Isaacman has named Troy Asher director of the agency’s Armstrong Flight Research Center in Edwards, California. Asher, a veteran test pilot and aerospace engineer with decades of experience in flight research and operations, has served as the center’s acting director since March. “Troy has spent his career pushing the boundaries of flight, […]",
-      "url": "https://www.nasa.gov/news-release/nasa-names-troy-asher-armstrong-flight-research-center-director/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-29T18:00:35.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-d8be33690e640182",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-27T08:59:12.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-114ef2a3c4d65d8a",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Anna Romandash",
-      "title": "Volunteers from Poland remember how Poles opened their homes to Ukrainian refugees in 2022",
-      "summary": "Five years into the full-scale war, however, the border has also revealed the limits of that extraordinary solidarity.",
-      "url": "https://globalvoices.org/2026/10/26/volunteers-from-poland-remember-how-poles-opened-their-homes-to-ukrainian-refugees-in-2022/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-26T19:45:17.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
