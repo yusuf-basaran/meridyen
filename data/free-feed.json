@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-30T11:36:26.565Z",
+  "updatedAt": "2026-10-30T17:10:23.719Z",
   "items": [
+    {
+      "id": "free-globalvoices-cc3f8dae9378dc99",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Brazil",
+      "title": "How the streets and a social media army led Lula to a historic win in Brazil",
+      "summary": "After ending the first round 2.2 million votes behind his opponent, Flávio Bolsonaro, Lula won the election with a difference of 4 million votes, and will serve a fourth term as president",
+      "url": "https://globalvoices.org/2026/10/30/how-the-streets-and-a-social-media-army-led-lula-to-a-historic-win-in-brazil/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-30T16:37:15.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-87d0c3d961e539a4",
       "sourceId": "globalvoices",
@@ -57,21 +72,6 @@
       "category": "Bilim",
       "language": "en",
       "publishedAt": "2026-10-29T18:00:35.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-624e1e1e3d1bccd5",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "María José Viñas",
-      "title": "Envía tu nombre a Titán a bordo de la misión Dragonfly de la NASA",
-      "summary": "Read this release in English here. Puede que nunca llegues a surcar los cielos bajo las nubes o sobre las arenas orgánicas de la luna Titán de Saturno, ¡pero tu nombre sí puede hacerlo! La NASA invita al público a enviar su nombre a bordo de la aeronave de ala giratoria Dragonfly de la agencia […]",
-      "url": "https://www.nasa.gov/news-release/envia-tu-nombre-a-titan-a-bordo-de-la-mision-dragonfly-de-la-nasa/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-29T15:21:23.000Z",
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
@@ -165,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-108bf48e99096c46",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Laura",
-      "title": "Vote young yet govern much later: West African youth’s struggle for power",
-      "summary": "Young people are deemed mature enough to elect their leaders, yet not to replace them. They drive political movements forward by voting, advocating, campaigning, and protesting, yet cannot run for office themselves.",
-      "url": "https://globalvoices.org/2026/10/26/vote-young-yet-govern-much-later-west-african-youths-struggle-for-power/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-26T08:30:41.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -191,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 1
     }
   ]
 }
