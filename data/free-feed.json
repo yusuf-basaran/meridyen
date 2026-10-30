@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T23:54:28.745Z",
+  "updatedAt": "2026-10-30T05:36:02.771Z",
   "items": [
     {
       "id": "free-globalvoices-22e7bfbd65e9c6e6",
@@ -30,6 +30,51 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-nasa-6a8e8f4a60c54205",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Lauren E. Low",
+      "title": "NASA Names Troy Asher Armstrong Flight Research Center Director",
+      "summary": "NASA Administrator Jared Isaacman has named Troy Asher director of the agency’s Armstrong Flight Research Center in Edwards, California. Asher, a veteran test pilot and aerospace engineer with decades of experience in flight research and operations, has served as the center’s acting director since March. “Troy has spent his career pushing the boundaries of flight, […]",
+      "url": "https://www.nasa.gov/news-release/nasa-names-troy-asher-armstrong-flight-research-center-director/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-10-29T18:00:35.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-nasa-624e1e1e3d1bccd5",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "María José Viñas",
+      "title": "Envía tu nombre a Titán a bordo de la misión Dragonfly de la NASA",
+      "summary": "Read this release in English here. Puede que nunca llegues a surcar los cielos bajo las nubes o sobre las arenas orgánicas de la luna Titán de Saturno, ¡pero tu nombre sí puede hacerlo! La NASA invita al público a enviar su nombre a bordo de la aeronave de ala giratoria Dragonfly de la agencia […]",
+      "url": "https://www.nasa.gov/news-release/envia-tu-nombre-a-titan-a-bordo-de-la-mision-dragonfly-de-la-nasa/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-10-29T15:21:23.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-nasa-dddd54e7732bfe41",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "Send Your Name to Titan Aboard NASA’s Dragonfly Mission",
+      "summary": "You may never soar under the clouds or over the organic sands of Saturn’s moon Titan, but your name can. NASA is inviting the public to send their names aboard the agency’s Dragonfly rotorcraft and be part of the first science mission to fly and explore the surface of another world. To have your […]",
+      "url": "https://www.nasa.gov/news-release/send-your-name-to-titan-aboard-nasas-dragonfly-mission/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-10-29T15:10:18.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-d8be33690e640182",
@@ -160,8 +205,8 @@
     },
     {
       "sourceId": "nasa",
-      "ok": false,
-      "items": 0
+      "ok": true,
+      "items": 3
     }
   ]
 }
