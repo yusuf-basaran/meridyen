@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-30T05:36:02.771Z",
+  "updatedAt": "2026-10-30T11:36:26.565Z",
   "items": [
+    {
+      "id": "free-globalvoices-87d0c3d961e539a4",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Jude Pierre Louis",
+      "title": "How one Haitian entrepreneur found success by supporting all things local",
+      "summary": "Rébetha Charles didn’t initially see herself as an entrepreneur; everything grew out of her core commitment to Haitian farmers by buying their crops, and encouraging consumers to eat local products.",
+      "url": "https://globalvoices.org/2026/10/30/how-one-haitian-entrepreneur-found-success-by-supporting-all-things-local/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-10-30T08:16:14.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-22e7bfbd65e9c6e6",
       "sourceId": "globalvoices",
@@ -57,21 +72,6 @@
       "category": "Bilim",
       "language": "en",
       "publishedAt": "2026-10-29T15:21:23.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-dddd54e7732bfe41",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "Send Your Name to Titan Aboard NASA’s Dragonfly Mission",
-      "summary": "You may never soar under the clouds or over the organic sands of Saturn’s moon Titan, but your name can. NASA is inviting the public to send their names aboard the agency’s Dragonfly rotorcraft and be part of the first science mission to fly and explore the surface of another world. To have your […]",
-      "url": "https://www.nasa.gov/news-release/send-your-name-to-titan-aboard-nasas-dragonfly-mission/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-29T15:10:18.000Z",
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
@@ -180,21 +180,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-e45478533971e2c0",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Liam Anderson",
-      "title": "Between two shores: The ‘Monhés,’ nationality, and a sense of belonging in Mozambique",
-      "summary": "“Monhé” is not a nationality: a person of Indian origin can be completely Mozambican, foreign, or in some cases, stateless.",
-      "url": "https://globalvoices.org/2026/10/25/between-two-shores-the-monhes-nationality-and-a-sense-of-belonging-in-mozambique/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-25T16:00:16.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -206,7 +191,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 3
+      "items": 2
     }
   ]
 }
