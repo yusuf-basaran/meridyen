@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-10-31T13:49:59.178Z",
+  "updatedAt": "2026-11-02T20:16:52.047Z",
   "items": [
+    {
+      "id": "free-globalvoices-dcefcd6523989618",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Civic Media Observatory",
+      "title": "The Brazilian left’s quest to ‘tame’ Meta: A narrative of denouncement and resistance",
+      "summary": "In our October edition of Undertones, we examine a movement calling for accountability and coordinated online action to challenge Meta’s problematic content moderation policies and governance practices in Brazil.",
+      "url": "https://globalvoices.org/2026/11/02/brazilian-lefts-quest-to-tame-meta-a-narrative-of-denouncement-and-resistance/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-02T18:08:55.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-622bdd8b4e29ecda",
       "sourceId": "globalvoices",
@@ -150,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-895cb373e8217a57",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "ProBox",
-      "title": "Warning Signals: Venezuela and the Risk of AI-Powered Chinese Digital Authoritarianism",
-      "summary": "A report by the Australian think tank ASPI warns that Venezuela could integrate Chinese artificial intelligence into its surveillance system and expand its digital control capabilities.",
-      "url": "https://globalvoices.org/2026/10/27/warning-signals-venezuela-and-the-risk-of-ai-powered-chinese-digital-authoritarianism/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-27T21:10:54.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -175,7 +175,7 @@
     },
     {
       "sourceId": "nasa",
-      "ok": true,
+      "ok": false,
       "items": 1
     }
   ]
