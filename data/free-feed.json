@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-03T10:43:40.863Z",
+  "updatedAt": "2026-11-03T18:22:47.469Z",
   "items": [
+    {
+      "id": "free-globalvoices-22bf9e388ecd4b17",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Walid El Houri",
+      "title": "Egypt’s crackdown on independent media reaches Mada Masr as editor faces trial",
+      "summary": "Egypt has convicted Mada Masr’s editor in chief Lina Attalah and ordered the outlet closed, weeks after arresting the whole Matsada2sh newsroom.",
+      "url": "https://globalvoices.org/2026/11/03/egypts-crackdown-on-independent-media-reaches-mada-masr-as-editor-faces-trial/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-03T15:56:04.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-6ded87de6b6017b4",
       "sourceId": "globalvoices",
@@ -47,6 +62,21 @@
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     },
     {
+      "id": "free-nasa-9afd0129ac20e250",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Invites Media to Northrop Grumman CRS-25 Station Resupply Launch",
+      "summary": "Media accreditation is open for the next launch to deliver NASA science investigations, supplies, and equipment to the International Space Station. A Northrop Grumman Cygnus XL spacecraft will launch in November to the orbital laboratory on a SpaceX Falcon 9 rocket for NASA. The mission is known as NASA’s Northrop Grumman Commercial Resupply Services 25, […]",
+      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-02T17:33:22.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
       "id": "free-globalvoices-622bdd8b4e29ecda",
       "sourceId": "globalvoices",
       "sourceName": "Global Voices",
@@ -60,21 +90,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-41fa33a940a90fd4",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Releases MAX POWER Key Events for Media, Participants",
-      "summary": "America’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running through Sunday, Nov. 8, hosted on and near the agency’s Kennedy Space Center in Florida. Through multiple park experiences at MAX POWER, NASA and a variety of external collaborators […]",
-      "url": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-10-30T19:31:02.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-34b46e8b2025248c",
@@ -150,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-d8be33690e640182",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nurbek Bekmurzaev",
-      "title": "In Albania, rural youth are campaigning to solve local environmental problems",
-      "summary": "Their phones and creativity are enough when they have a clear purpose and guidance.",
-      "url": "https://globalvoices.org/2026/10/29/in-albania-rural-youth-are-campaigning-to-solve-local-environmental-problems/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-29T13:40:53.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -175,7 +175,7 @@
     },
     {
       "sourceId": "nasa",
-      "ok": false,
+      "ok": true,
       "items": 1
     }
   ]
