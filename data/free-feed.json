@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-03T02:37:23.830Z",
+  "updatedAt": "2026-11-03T10:43:40.863Z",
   "items": [
+    {
+      "id": "free-globalvoices-6ded87de6b6017b4",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Oiwan Lam",
+      "title": "Unpacking Hong Kong’s rule of law score according to the World Justice Project’s ranking",
+      "summary": "Institutional injustice, such as political nepotism, legal discrimination, and cronyism, is a far worse abusive use of power that creates systematic injustice.",
+      "url": "https://globalvoices.org/2026/11/03/unpacking-hong-kongs-rule-of-law-score-according-to-the-world-justice-projects-ranking/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-03T03:21:48.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-71d6b19e04252a50",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-29T13:40:53.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-b61e20d7505c9517",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices Announcements",
-      "title": "Support Global Voices’ Spotlight: Justice as infrastructure",
-      "summary": "Global Voices is partnering with The Hague Institute for Innovation of Law (HiiL) to highlight the ways justice functions as critical infrastructure for any society.",
-      "url": "https://globalvoices.org/2026/10/28/support-global-voices-spotlight-justice-as-infrastructure/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-28T15:25:02.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
