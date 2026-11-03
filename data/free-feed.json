@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-02T20:16:52.047Z",
+  "updatedAt": "2026-11-03T02:37:23.830Z",
   "items": [
+    {
+      "id": "free-globalvoices-71d6b19e04252a50",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Nurbek Bekmurzaev",
+      "title": "In Kosovo, a new app makes reporting problems to the government fast and easy",
+      "summary": "Based on the type and location of the problem, the platform is designed to route the report to the appropriate department and allow the citizen to follow what happens afterwards.",
+      "url": "https://globalvoices.org/2026/11/02/in-kosovo-a-new-app-makes-reporting-problems-to-the-government-fast-and-easy/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-02T23:49:55.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-dcefcd6523989618",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-28T15:25:02.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-a50a41dff26fbffc",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Masudul Zarif",
-      "title": "Bangladesh weighs tougher cyber law as AI-generated abuse targets women",
-      "summary": "Bangladesh’s proposed cyber law targets AI-generated fakes, but critics warn broad provisions on rumours, defamation and disinformation could revive censorship and threaten online free expression, even as victims need protection.",
-      "url": "https://globalvoices.org/2026/10/28/bangladesh-weighs-tougher-cyber-law-as-ai-generated-abuse-targets-women/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-28T07:51:42.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
