@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-03T18:22:47.469Z",
+  "updatedAt": "2026-11-04T06:03:43.661Z",
   "items": [
+    {
+      "id": "free-globalvoices-b7b56bab430c4634",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Zulker Naeen",
+      "title": "Tracing the recruitment trap behind Russia’s war",
+      "summary": "Bangladeshi men paid agents for Russian jobs and ended up on the front lines. Families wait for bodies and answers, and they want the recruiters behind it in a courtroom.",
+      "url": "https://globalvoices.org/2026/11/04/tracing-the-recruitment-trap-behind-russias-war/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-04T05:26:29.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-22bf9e388ecd4b17",
       "sourceId": "globalvoices",
@@ -60,21 +75,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-9afd0129ac20e250",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Invites Media to Northrop Grumman CRS-25 Station Resupply Launch",
-      "summary": "Media accreditation is open for the next launch to deliver NASA science investigations, supplies, and equipment to the International Space Station. A Northrop Grumman Cygnus XL spacecraft will launch in November to the orbital laboratory on a SpaceX Falcon 9 rocket for NASA. The mission is known as NASA’s Northrop Grumman Commercial Resupply Services 25, […]",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-02T17:33:22.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-622bdd8b4e29ecda",
@@ -150,21 +150,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-7e490cd78d58f532",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Exile Hub",
-      "title": "A Myanmar journalist’s reflection: ‘When other people’s pain becomes part of you’",
-      "summary": "\"Four years later, after witnessing so many painful stories, I have learned that telling other people’s stories also requires learning how to care for myself.\"",
-      "url": "https://globalvoices.org/2026/10/29/a-myanmar-journalists-reflection-when-other-peoples-pain-becomes-part-of-you/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-29T18:13:03.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -176,7 +161,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 0
     }
   ]
 }
