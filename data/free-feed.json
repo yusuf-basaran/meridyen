@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-04T14:23:00.410Z",
+  "updatedAt": "2026-11-04T20:54:37.035Z",
   "items": [
+    {
+      "id": "free-nasa-ab404887a11508dc",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+      "summary": "NASA selected three companies on Wednesday to perform work to develop Ka-band space relay capability concepts that are compatible with current missions in space, ensuring service continuity for existing spacecraft without requiring modifications to their onboard systems. Through this work, NASA will aim to acquire end-to-end solutions that include space, ground, launch, operations, and integration […]",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-04T18:00:02.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-b7b56bab430c4634",
       "sourceId": "globalvoices",
@@ -161,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 0
+      "items": 1
     }
   ]
 }
