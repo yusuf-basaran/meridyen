@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T20:54:37.035Z",
+  "updatedAt": "2026-11-05T01:26:03.179Z",
   "items": [
     {
       "id": "free-nasa-ab404887a11508dc",
@@ -15,6 +15,21 @@
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-globalvoices-7a4e232949ce130b",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Brazil",
+      "title": "The scandals and suspects surrounding Flávio Bolsonaro, according to the Brazilian press",
+      "summary": "The former president's eldest son, Flávio, had been linked to embezzlement charges in his own cabinet. During the campaign, however, his resume was exposed even further",
+      "url": "https://globalvoices.org/2026/11/04/the-scandals-and-suspects-surrounding-flavio-bolsonaro-according-to-the-brazilian-press/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-04T17:38:28.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     },
     {
       "id": "free-globalvoices-b7b56bab430c4634",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-30T08:16:14.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-22e7bfbd65e9c6e6",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "A digital publication sheds light on Turkey’s prison system",
-      "summary": "“For the relatives of people in prison, as well as for national and international human rights organizations and agencies, the information provided by the Prison Agenda publication can be vital.”",
-      "url": "https://globalvoices.org/2026/10/29/a-digital-publication-sheds-light-on-turkeys-prison-system/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-29T23:06:48.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
