@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-05T08:27:09.277Z",
+  "updatedAt": "2026-11-05T16:45:03.781Z",
   "items": [
+    {
+      "id": "free-globalvoices-3a1c6210703ea550",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Rebecca MacKinnon",
+      "title": "What comes after networked authoritarianism?",
+      "summary": "October’s spotlight on Big Tech and Authoritarianism explored a range of relationships between tech companies and political actors across the global majority.",
+      "url": "https://globalvoices.org/2026/11/05/what-comes-after-networked-authoritarianism/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-05T16:17:00.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-490d63fb47530eab",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-30T19:30:47.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-cc3f8dae9378dc99",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices Brazil",
-      "title": "How the streets and a social media army led Lula to a historic win in Brazil",
-      "summary": "After ending the first round 2.2 million votes behind his opponent, Flávio Bolsonaro, Lula won the election with a difference of 4 million votes, and will serve a fourth term as president",
-      "url": "https://globalvoices.org/2026/10/30/how-the-streets-and-a-social-media-army-led-lula-to-a-historic-win-in-brazil/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-30T16:37:15.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
