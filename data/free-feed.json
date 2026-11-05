@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-11-05T01:26:03.179Z",
+  "updatedAt": "2026-11-05T08:27:09.277Z",
   "items": [
+    {
+      "id": "free-globalvoices-490d63fb47530eab",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Lina Ma",
+      "title": "Unmarried Chinese women are rewriting the marriage script",
+      "summary": "Some unmarried Chinese women are actively challenging the social stigma associated with being “leftover women” by questioning family pressure, sharing ways to escape it, or reframing the discussion altogether.",
+      "url": "https://globalvoices.org/2026/11/05/unmarried-chinese-women-are-rewriting-the-marriage-script/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-05T06:03:41.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-nasa-1522f10d7fdf55bd",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Cheryl Warner",
+      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+      "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable research platform is designed to accelerate the development and testing of advanced aviation technologies. The crewed X-70 features advanced, rapidly reconfigurable flight-control technology that will allow NASA to explore […]",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-05T01:43:21.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-nasa-ab404887a11508dc",
       "sourceId": "nasa",
@@ -150,21 +180,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-87d0c3d961e539a4",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Jude Pierre Louis",
-      "title": "How one Haitian entrepreneur found success by supporting all things local",
-      "summary": "Rébetha Charles didn’t initially see herself as an entrepreneur; everything grew out of her core commitment to Haitian farmers by buying their crops, and encouraging consumers to eat local products.",
-      "url": "https://globalvoices.org/2026/10/30/how-one-haitian-entrepreneur-found-success-by-supporting-all-things-local/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-30T08:16:14.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -176,7 +191,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 2
     }
   ]
 }
