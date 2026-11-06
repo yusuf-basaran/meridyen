@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-06T03:22:33.379Z",
+  "updatedAt": "2026-11-06T11:25:58.056Z",
   "items": [
+    {
+      "id": "free-globalvoices-52680ab1aa8ef9ae",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Óscar Calles",
+      "title": "Venezuela welcomes opposition leader María Corina Machado home",
+      "summary": "Venezuela’s Nobel laureate María Corina Machado returned to Caracas in a massive celebration after months in hiding and exile, sparking deep hope and sharp questions about the country’s political future.",
+      "url": "https://globalvoices.org/2026/11/06/venezuela-welcomes-opposition-leader-maria-corina-machado-home/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-06T06:00:36.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-d8d8b095f3b58c07",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-02T18:08:55.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-622bdd8b4e29ecda",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nurbek Bekmurzaev",
-      "title": "In Kazakhstan, rural women are forming collectives to improve their livelihoods",
-      "summary": "The planned cooperative would support joint advocacy, shared learning, and exploration of funding opportunities for smart-well or shared irrigation infrastructure.",
-      "url": "https://globalvoices.org/2026/10/31/in-kazakhstan-rural-women-are-forming-collectives-to-improve-their-livelihoods/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-31T13:38:41.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
