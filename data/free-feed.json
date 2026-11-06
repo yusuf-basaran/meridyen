@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-06T18:22:17.122Z",
+  "updatedAt": "2026-11-06T23:28:53.151Z",
   "items": [
+    {
+      "id": "free-globalvoices-b100cccac75fe549",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Nshua Cali-Dibang",
+      "title": "Big Tech, AI, and the quiet expansion of digital surveillance in Nigeria",
+      "summary": "...systems designed to maximise commercial value from information can create incentives to collect more data than people reasonably expect or understand.",
+      "url": "https://globalvoices.org/2026/11/06/big-tech-ai-and-the-quiet-expansion-of-digital-surveillance-in-nigeria/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-06T20:01:09.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-52680ab1aa8ef9ae",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-02T23:49:55.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-dcefcd6523989618",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Civic Media Observatory",
-      "title": "The Brazilian left’s quest to ‘tame’ Meta: A narrative of denouncement and resistance",
-      "summary": "In our October edition of Undertones, we examine a movement calling for accountability and coordinated online action to challenge Meta’s problematic content moderation policies and governance practices in Brazil.",
-      "url": "https://globalvoices.org/2026/11/02/brazilian-lefts-quest-to-tame-meta-a-narrative-of-denouncement-and-resistance/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-02T18:08:55.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
