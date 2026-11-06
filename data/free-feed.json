@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-05T16:45:03.781Z",
+  "updatedAt": "2026-11-06T03:22:33.379Z",
   "items": [
+    {
+      "id": "free-globalvoices-d8d8b095f3b58c07",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices",
+      "title": "Global Voices condemns the attacks on Albanian fact-checking service Faktoje",
+      "summary": "We stand in solidarity with Faktoje following a series of coordinated attacks that have weaponized its transparent financial data to undermine its vital work exposing misinformation around local protests.",
+      "url": "https://globalvoices.org/2026/11/06/global-voices-condemns-the-attacks-on-albanian-fact-checking-service-faktoje/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-06T01:38:56.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-3a1c6210703ea550",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-10-31T13:38:41.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-34b46e8b2025248c",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Guest Contributor",
-      "title": "When chatbots become ‘answer engines’: AI, geopolitics and truth",
-      "summary": "As AI chatbots become everyday sources of information, research from Kosovo raises questions about how these systems present and sometimes distort geopolitical narratives.",
-      "url": "https://globalvoices.org/2026/10/30/when-chatbots-become-answer-engines-ai-geopolitics-and-truth/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-10-30T19:30:47.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
