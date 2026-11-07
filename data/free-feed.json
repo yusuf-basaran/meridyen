@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-07T10:38:41.607Z",
+  "updatedAt": "2026-11-07T20:49:47.952Z",
   "items": [
+    {
+      "id": "free-nasa-44a6b3793253ee6a",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
+      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-07T18:11:57.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-af602226ea1fccef",
       "sourceId": "globalvoices",
@@ -161,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 0
+      "items": 1
     }
   ]
 }
