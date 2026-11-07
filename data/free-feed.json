@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-06T23:28:53.151Z",
+  "updatedAt": "2026-11-07T10:38:41.607Z",
   "items": [
+    {
+      "id": "free-globalvoices-af602226ea1fccef",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Daria Dergacheva",
+      "title": "How people in Montenegro are making their country cleaner",
+      "summary": "While Montenegro works to align its waste management with EU directives, ordinary citizens are taking practical steps to improve the situation now.",
+      "url": "https://globalvoices.org/2026/11/07/how-people-in-montenegro-are-making-their-country-cleaner/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-07T08:09:15.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-b100cccac75fe549",
       "sourceId": "globalvoices",
@@ -77,21 +92,6 @@
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     },
     {
-      "id": "free-nasa-1522f10d7fdf55bd",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Cheryl Warner",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable research platform is designed to accelerate the development and testing of advanced aviation technologies. The crewed X-70 features advanced, rapidly reconfigurable flight-control technology that will allow NASA to explore […]",
-      "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-05T01:43:21.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
       "id": "free-globalvoices-7a4e232949ce130b",
       "sourceId": "globalvoices",
       "sourceName": "Global Voices",
@@ -150,21 +150,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-71d6b19e04252a50",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nurbek Bekmurzaev",
-      "title": "In Kosovo, a new app makes reporting problems to the government fast and easy",
-      "summary": "Based on the type and location of the problem, the platform is designed to route the report to the appropriate department and allow the citizen to follow what happens afterwards.",
-      "url": "https://globalvoices.org/2026/11/02/in-kosovo-a-new-app-makes-reporting-problems-to-the-government-fast-and-easy/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-02T23:49:55.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -176,7 +161,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 0
     }
   ]
 }
