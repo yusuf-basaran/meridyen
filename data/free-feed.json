@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-08T14:15:13.897Z",
+  "updatedAt": "2026-11-08T19:03:48.217Z",
   "items": [
+    {
+      "id": "free-nasa-e12ad5f5bdc739ac",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "summary": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida. As part of a Golden Age of Science, the competition invites student teams at U.S. high schools and post-secondary schools to contribute designs for the Moon Base. “We’re […]",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-08T15:26:38.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-252624f88b56db4d",
       "sourceId": "globalvoices",
@@ -191,7 +206,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 3
     }
   ]
 }
