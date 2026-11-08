@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-07T20:49:47.952Z",
+  "updatedAt": "2026-11-08T00:26:50.942Z",
   "items": [
+    {
+      "id": "free-nasa-7723ccbf8c3a4f1a",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "summary": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities. The investments will advance commercial robotic deliveries, a nuclear-powered rover named PROMISE, launch and orbital transfer services, and surface infrastructure as the agency works with American industry to establish a sustained presence on […]",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-07T22:47:03.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-nasa-44a6b3793253ee6a",
       "sourceId": "nasa",
@@ -170,13 +185,13 @@
   "sources": [
     {
       "sourceId": "globalvoices",
-      "ok": true,
+      "ok": false,
       "items": 10
     },
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 2
     }
   ]
 }
