@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-08T06:38:25.263Z",
+  "updatedAt": "2026-11-08T14:15:13.897Z",
   "items": [
+    {
+      "id": "free-globalvoices-252624f88b56db4d",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Carolina Pichardo",
+      "title": "Beyond the beaches: The Dominican Republic and the global debate over deep-sea mining",
+      "summary": "The DR wanted science to keep advancing and the International Seabed Authority to finish building the regulatory framework that the UN Convention had mandated it to develop.",
+      "url": "https://globalvoices.org/2026/11/08/beyond-the-beaches-the-dominican-republic-and-the-global-debate-over-deep-sea-mining/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-08T14:12:02.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-7723ccbf8c3a4f1a",
       "sourceId": "nasa",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-03T15:56:04.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-6ded87de6b6017b4",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Oiwan Lam",
-      "title": "Unpacking Hong Kong’s rule of law score according to the World Justice Project’s ranking",
-      "summary": "Institutional injustice, such as political nepotism, legal discrimination, and cronyism, is a far worse abusive use of power that creates systematic injustice.",
-      "url": "https://globalvoices.org/2026/11/03/unpacking-hong-kongs-rule-of-law-score-according-to-the-world-justice-projects-ranking/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-03T03:21:48.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
