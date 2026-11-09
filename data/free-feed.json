@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-11-08T19:03:48.217Z",
+  "updatedAt": "2026-11-09T10:17:39.747Z",
   "items": [
+    {
+      "id": "free-globalvoices-77c9077e14bc6872",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Nshua Cali-Dibang",
+      "title": "Big Tech, AI, and the quiet expansion of digital surveillance in Nigeria",
+      "summary": "Systems designed to maximize commercial value from information can create incentives to collect more data than people reasonably expect or understand.",
+      "url": "https://globalvoices.org/2026/11/09/big-tech-ai-and-the-quiet-expansion-of-digital-surveillance-in-nigeria/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-09T07:34:09.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-globalvoices-a44866f1afe4f053",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Sangita Swechcha",
+      "title": "The dreamer who wants the world to read Nepali literature",
+      "summary": "Rishi Ram Adhikari, founder of Kitab Yatra and Kitab Jatra Festival, discusses his mission to promote Nepali literature globally, build libraries and connect readers across borders through cultural exchange.",
+      "url": "https://globalvoices.org/2026/11/09/the-dreamer-who-wants-the-world-to-read-nepali-literature/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-09T05:00:27.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-e12ad5f5bdc739ac",
       "sourceId": "nasa",
@@ -72,21 +102,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-07T08:09:15.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-b100cccac75fe549",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nshua Cali-Dibang",
-      "title": "Big Tech, AI, and the quiet expansion of digital surveillance in Nigeria",
-      "summary": "...systems designed to maximise commercial value from information can create incentives to collect more data than people reasonably expect or understand.",
-      "url": "https://globalvoices.org/2026/11/06/big-tech-ai-and-the-quiet-expansion-of-digital-surveillance-in-nigeria/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-06T20:01:09.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
@@ -177,21 +192,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-04T05:26:29.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-22bf9e388ecd4b17",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Walid El Houri",
-      "title": "Egypt’s crackdown on independent media reaches Mada Masr as editor faces trial",
-      "summary": "Egypt has convicted Mada Masr’s editor-in-chief Lina Attalah and ordered the outlet closed, weeks after arresting the whole Matsada2sh newsroom.",
-      "url": "https://globalvoices.org/2026/11/03/egypts-crackdown-on-independent-media-reaches-mada-masr-as-editor-faces-trial/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-03T15:56:04.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
