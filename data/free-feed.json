@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-11-09T10:17:39.747Z",
+  "updatedAt": "2026-11-09T21:01:43.315Z",
   "items": [
+    {
+      "id": "free-globalvoices-be1e4839c2610b94",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Jude Pierre Louis",
+      "title": "From a quiet life to the terror of armed gangs: The story of Haiti’s Kenscoff district",
+      "summary": "After the first of two deadly gang attacks this year, the Kenscoff community, like many other regions in the country, turned from peaceful living to being held to ransom.",
+      "url": "https://globalvoices.org/2026/11/09/from-a-quiet-life-to-the-terror-of-armed-gangs-the-story-of-haitis-kenscoff-district/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-09T20:03:48.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-nasa-49e50de3c508947d",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "María José Viñas",
+      "title": "La NASA busca a la próxima generación de astronautas",
+      "summary": "Read this release in English here.La NASA busca a los exploradores que ayudarán a escribir el próximo capítulo de los vuelos espaciales tripulados. Ya está abierto el plazo de inscripción para la próxima promoción de astronautas de la agencia, que se incorporarán a la NASA en un momento en el que Estados Unidos regresa a […]",
+      "url": "https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-09T19:27:20.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-nasa-677dc7b812a3d2ee",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "María José Viñas",
+      "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
+      "summary": "Read this release in English here.El domingo 8 de noviembre de 2026, la NASA anunció la convocatoria del reto estudiantil Base Lunar, dotado con un millón de dólares, durante un acto de MAX POWER celebrado en el Complejo de Visitantes del Centro Espacial Kennedy, en Florida. En el marco de una edad de oro de […]",
+      "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-09T17:36:33.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-77c9077e14bc6872",
       "sourceId": "globalvoices",
@@ -32,21 +77,6 @@
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     },
     {
-      "id": "free-nasa-e12ad5f5bdc739ac",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
-      "summary": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida. As part of a Golden Age of Science, the competition invites student teams at U.S. high schools and post-secondary schools to contribute designs for the Moon Base. “We’re […]",
-      "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-08T15:26:38.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
       "id": "free-globalvoices-252624f88b56db4d",
       "sourceId": "globalvoices",
       "sourceName": "Global Voices",
@@ -60,36 +90,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-7723ccbf8c3a4f1a",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-      "summary": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities. The investments will advance commercial robotic deliveries, a nuclear-powered rover named PROMISE, launch and orbital transfer services, and surface infrastructure as the agency works with American industry to establish a sustained presence on […]",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-07T22:47:03.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-44a6b3793253ee6a",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-      "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-07T18:11:57.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-af602226ea1fccef",
@@ -180,21 +180,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-b7b56bab430c4634",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Zulker Naeen",
-      "title": "Tracing the recruitment trap behind Russia’s war",
-      "summary": "Bangladeshi men paid agents for Russian jobs and ended up on the front lines. Families wait for bodies and answers, and they want the recruiters behind it in a courtroom.",
-      "url": "https://globalvoices.org/2026/11/04/tracing-the-recruitment-trap-behind-russias-war/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-04T05:26:29.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -206,7 +191,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 3
+      "items": 2
     }
   ]
 }
