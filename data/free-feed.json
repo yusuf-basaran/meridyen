@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-10T11:41:24.198Z",
+  "updatedAt": "2026-11-10T19:38:58.078Z",
   "items": [
+    {
+      "id": "free-nasa-b5609a4ae8c29f7f",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Wendy K. Avedisian",
+      "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
+      "summary": "NASA will welcome home the Expedition 74 crew during a public event at Space Center Houston following their return from a long-duration mission aboard the International Space Station. NASA astronauts Jessica Meir, Jack Hathaway, and Chris Williams; ESA (European Space Agency) astronaut Sophie Adenot; and Roscosmos cosmonauts Sergey Kud‑Sverchkov and Sergei Mikaev will share mission […]",
+      "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-10T18:06:33.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-9839f615dc45cdfb",
       "sourceId": "globalvoices",
@@ -42,21 +57,6 @@
       "category": "Bilim",
       "language": "en",
       "publishedAt": "2026-11-09T19:27:20.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-677dc7b812a3d2ee",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "María José Viñas",
-      "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
-      "summary": "Read this release in English here.El domingo 8 de noviembre de 2026, la NASA anunció la convocatoria del reto estudiantil Base Lunar, dotado con un millón de dólares, durante un acto de MAX POWER celebrado en el Complejo de Visitantes del Centro Espacial Kennedy, en Florida. En el marco de una edad de oro de […]",
-      "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-09T17:36:33.000Z",
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
