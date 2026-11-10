@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-09T21:01:43.315Z",
+  "updatedAt": "2026-11-10T11:41:24.198Z",
   "items": [
+    {
+      "id": "free-globalvoices-9839f615dc45cdfb",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices East Asia",
+      "title": "Ex-lawmaker sentenced to 12.5 years in prison in closed-door trial in Macau",
+      "summary": "Macau recorded its first conviction under the city’s national security law on November 6, 2026, sentencing 69-year-old former lawmaker Au Kam San to 12.5 years in prison. Observers call it an “unfair” “sham trial”",
+      "url": "https://globalvoices.org/2026/11/10/ex-lawmaker-sentenced-to-12-5-years-in-prison-in-closed-door-trial-in-macau/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-10T05:36:17.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-be1e4839c2610b94",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-05T06:03:41.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-7a4e232949ce130b",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices Brazil",
-      "title": "The scandals and suspects surrounding Flávio Bolsonaro, according to the Brazilian press",
-      "summary": "The former president's eldest son, Flávio, had been linked to embezzlement charges in his own cabinet. During the campaign, however, his resume was exposed even further",
-      "url": "https://globalvoices.org/2026/11/04/the-scandals-and-suspects-surrounding-flavio-bolsonaro-according-to-the-brazilian-press/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-04T17:38:28.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
