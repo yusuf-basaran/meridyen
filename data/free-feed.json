@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-11T00:35:37.174Z",
+  "updatedAt": "2026-11-11T15:06:06.090Z",
   "items": [
+    {
+      "id": "free-globalvoices-9cbb3aced155e6ed",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Guest Contributor",
+      "title": "Justice is the infrastructure the world keeps forgetting",
+      "summary": "Physical infrastructure cannot deliver its promised benefits when the institutions and mechanisms for resolving grievances are inaccessible, ineffective or distrusted.",
+      "url": "https://globalvoices.org/2026/11/11/justice-is-the-infrastructure-the-world-keeps-forgetting/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-11T09:03:35.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-cbc943f9a9de0625",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-06T06:00:36.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-d8d8b095f3b58c07",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices",
-      "title": "Global Voices condemns the attacks on Albanian fact-checking service Faktoje",
-      "summary": "We stand in solidarity with Faktoje following a series of coordinated attacks that have weaponized its transparent financial data to undermine its vital work exposing misinformation around local protests.",
-      "url": "https://globalvoices.org/2026/11/06/global-voices-condemns-the-attacks-on-albanian-fact-checking-service-faktoje/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-06T01:38:56.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
