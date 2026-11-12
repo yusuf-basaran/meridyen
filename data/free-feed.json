@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-12T10:54:50.676Z",
+  "updatedAt": "2026-11-12T18:49:48.226Z",
   "items": [
+    {
+      "id": "free-globalvoices-188e708e4f83f2f1",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Gina Yauri",
+      "title": "Ecuadorian youth unite against neoliberal models and state violence",
+      "summary": "Thousands of Ecuadorian students have taken to the streets to reject President Noboa’s temporary job plans, demanding permanent solutions for public healthcare, education funding, and rising insecurity.",
+      "url": "https://globalvoices.org/2026/11/12/ecuadorian-youth-unite-against-neoliberal-models-and-state-violence/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-12T14:00:33.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-71b5ee627a401655",
       "sourceId": "globalvoices",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-08T14:12:02.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-af602226ea1fccef",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "How people in Montenegro are making their country cleaner",
-      "summary": "While Montenegro works to align its waste management with EU directives, ordinary citizens are taking practical steps to improve the situation now.",
-      "url": "https://globalvoices.org/2026/11/07/how-people-in-montenegro-are-making-their-country-cleaner/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-07T08:09:15.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
