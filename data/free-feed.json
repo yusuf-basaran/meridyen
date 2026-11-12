@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-11-11T21:53:37.391Z",
+  "updatedAt": "2026-11-12T02:51:57.993Z",
   "items": [
-    {
-      "id": "free-globalvoices-d7a71cfb9e4f8fbe",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "While Russia tries to manipulate information, local civil society is teaching Armenians media literacy",
-      "summary": "With the proliferation of generative AI, disinformation and propaganda campaigns have become increasingly sophisticated. Armenia’s experience shows how they operate in a country moving away from its longstanding reliance on Russia.",
-      "url": "https://globalvoices.org/2026/11/11/while-russia-tries-to-manipulate-information-local-civil-society-is-teaching-armenians-media-literacy/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-11T20:20:36.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
     {
       "id": "free-globalvoices-9cbb3aced155e6ed",
       "sourceId": "globalvoices",
@@ -177,6 +162,21 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-07T08:09:15.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-globalvoices-52680ab1aa8ef9ae",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Óscar Calles",
+      "title": "Venezuela welcomes opposition leader María Corina Machado home",
+      "summary": "Venezuela’s Nobel laureate María Corina Machado returned to Caracas in a massive celebration after months in hiding and exile, sparking deep hope and sharp questions about the country’s political future.",
+      "url": "https://globalvoices.org/2026/11/06/venezuela-welcomes-opposition-leader-maria-corina-machado-home/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-06T06:00:36.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
