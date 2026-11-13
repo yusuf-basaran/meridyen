@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-13T00:10:48.932Z",
+  "updatedAt": "2026-11-13T21:55:40.871Z",
   "items": [
+    {
+      "id": "free-globalvoices-01f3ceea2a743a1b",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Daria Dergacheva",
+      "title": "While Russia tries to manipulate information, local civil society is teaching Armenians media literacy",
+      "summary": "With the proliferation of generative AI, disinformation and propaganda campaigns have become increasingly sophisticated. Armenia’s experience shows how they operate in a country moving away from its longstanding reliance on Russia.",
+      "url": "https://globalvoices.org/2026/11/13/while-russia-tries-to-manipulate-information-local-civil-society-is-teaching-armenians-media-literacy/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-13T20:20:36.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-f27d3677b86c325d",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-09T07:34:09.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-a44866f1afe4f053",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Sangita Swechcha",
-      "title": "The dreamer who wants the world to read Nepali literature",
-      "summary": "Rishi Ram Adhikari, founder of Kitab Yatra and Kitab Jatra Festival, discusses his mission to promote Nepali literature globally, build libraries and connect readers across borders through cultural exchange.",
-      "url": "https://globalvoices.org/2026/11/09/the-dreamer-who-wants-the-world-to-read-nepali-literature/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-09T05:00:27.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
