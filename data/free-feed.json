@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-12T18:49:48.226Z",
+  "updatedAt": "2026-11-13T00:10:48.932Z",
   "items": [
+    {
+      "id": "free-globalvoices-f27d3677b86c325d",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Janine Mendes-Franco",
+      "title": "Trinbagonian Jason Jones wins landmark Privy Council judgement deeming ‘buggery laws’ unconstitutional",
+      "summary": "After a decade-long legal battle, the Privy Council has overturned a 2025 Court of Appeal decision to keep Trinidad and Tobago’s colonial-era “buggery law” on the books.",
+      "url": "https://globalvoices.org/2026/11/12/trinbagonian-jason-jones-wins-landmark-privy-council-judgement-deeming-buggery-laws-unconstitutional/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-12T20:00:11.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-188e708e4f83f2f1",
       "sourceId": "globalvoices",
@@ -77,36 +92,6 @@
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     },
     {
-      "id": "free-nasa-7b10e9232fe65cdc",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Gerelle Q. Dodson",
-      "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
-      "summary": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight […]",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-10T19:22:45.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-b5609a4ae8c29f7f",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Wendy K. Avedisian",
-      "title": "NASA to Welcome Expedition 74 Astronauts Home at Space Center Houston",
-      "summary": "NASA will welcome home the Expedition 74 crew during a public event at Space Center Houston following their return from a long-duration mission aboard the International Space Station. NASA astronauts Jessica Meir, Jack Hathaway, and Chris Williams; ESA (European Space Agency) astronaut Sophie Adenot; and Roscosmos cosmonauts Sergey Kud‑Sverchkov and Sergei Mikaev will share mission […]",
-      "url": "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-10T18:06:33.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
       "id": "free-globalvoices-9839f615dc45cdfb",
       "sourceId": "globalvoices",
       "sourceName": "Global Voices",
@@ -165,21 +150,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-252624f88b56db4d",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Carolina Pichardo",
-      "title": "Beyond the beaches: The Dominican Republic and the global debate over deep-sea mining",
-      "summary": "The DR wanted science to keep advancing and the International Seabed Authority to finish building the regulatory framework that the UN Convention had mandated it to develop.",
-      "url": "https://globalvoices.org/2026/11/08/beyond-the-beaches-the-dominican-republic-and-the-global-debate-over-deep-sea-mining/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-08T14:12:02.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -191,7 +161,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 0
     }
   ]
 }
