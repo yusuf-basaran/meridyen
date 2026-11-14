@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-13T21:55:40.871Z",
+  "updatedAt": "2026-11-14T09:21:13.347Z",
   "items": [
+    {
+      "id": "free-globalvoices-b3f2a72d93dad8d0",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Eurasia",
+      "title": "Letter from a jailed Azerbaijani political prisoner reveals deadly consequences of silence",
+      "summary": "Bahruz Samadov: “The selective attitude to the human rights issues and turning the blind eye to our suffering endangers the democratic security of the US itself, not to mention its international image.”",
+      "url": "https://globalvoices.org/2026/11/14/letter-from-a-jailed-azerbaijani-political-prisoner-reveals-deadly-consequences-of-silence/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-14T06:11:53.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-01f3ceea2a743a1b",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-09T20:03:48.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-77c9077e14bc6872",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nshua Cali-Dibang",
-      "title": "Big Tech, AI, and the quiet expansion of digital surveillance in Nigeria",
-      "summary": "Systems designed to maximize commercial value from information can create incentives to collect more data than people reasonably expect or understand.",
-      "url": "https://globalvoices.org/2026/11/09/big-tech-ai-and-the-quiet-expansion-of-digital-surveillance-in-nigeria/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-09T07:34:09.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
