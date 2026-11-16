@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-15T15:36:23.028Z",
+  "updatedAt": "2026-11-16T17:24:00.112Z",
   "items": [
+    {
+      "id": "free-globalvoices-fdda3fc0daf66cf9",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Masudul Zarif",
+      "title": "Civil society questions decree that could block access to telecommunications networks in Mozambique",
+      "summary": "The telecommunications decree in Mozambique raises serious concerns regarding potential restrictions on fundamental rights, including freedom of expression and access to information during periods of political tension.",
+      "url": "https://globalvoices.org/2026/11/16/civil-society-questions-decree-that-could-block-access-to-telecommunications-networks-in-mozambique/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-16T08:38:21.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-d5d04040527d6b17",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-11T00:14:49.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-c71221afdd9ea8fb",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Nurbek Bekmurzaev",
-      "title": "In Ukraine, youth are finding their voices in the digital democracy",
-      "summary": "We saw a gap: young people were consuming information and even participating online, but without media literacy, digital security awareness, or confidence that their voice could shape anything.",
-      "url": "https://globalvoices.org/2026/11/10/in-ukraine-youth-are-finding-their-voices-in-the-digital-democracy/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-10T19:49:12.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
