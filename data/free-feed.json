@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-16T17:24:00.112Z",
+  "updatedAt": "2026-11-17T01:01:52.826Z",
   "items": [
+    {
+      "id": "free-nasa-9cb60120da34165e",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Lauren E. Low",
+      "title": "NASA Receives 16th Consecutive ‘Clean’ Financial Audit Opinion",
+      "summary": "For the 16th consecutive year, NASA has received an unmodified, or “clean,” opinion from an external auditor on its fiscal year 2026 financial statements. The rating is the best possible audit opinion, certifying that NASA’s financial statements conform with Generally Accepted Accounting Principles for federal agencies and accurately present the agency’s financial position. “Our responsibility […]",
+      "url": "https://www.nasa.gov/news-release/nasa-receives-16th-consecutive-clean-financial-audit-opinion/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-16T20:30:40.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-globalvoices-fdda3fc0daf66cf9",
       "sourceId": "globalvoices",
@@ -12,6 +27,21 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-16T08:38:21.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-globalvoices-1d46b7ff5542e5eb",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Walid El Houri",
+      "title": "Making injustice legal: How Israeli law legitimizes apartheid, genocide and impunity",
+      "summary": "From military courts to closed investigations, Israeli law enforces two systems to maintain an apartheid, and international accountability is being dismantled by sanctions against the courts that uphold international law.",
+      "url": "https://globalvoices.org/2026/11/16/making-injustice-legal-how-israeli-law-legitimizes-apartheid-genocide-and-impunity/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
@@ -135,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-cbc943f9a9de0625",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Laura",
-      "title": "Restoring social media access comes at a cost in Gabon",
-      "summary": "After more than eight months, Gabon has restored its social media access. But it has come at a cost.",
-      "url": "https://globalvoices.org/2026/11/11/estoring-social-media-access-comes-at-a-cost-in-gabon/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-11T00:14:49.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -161,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 0
+      "items": 1
     }
   ]
 }
