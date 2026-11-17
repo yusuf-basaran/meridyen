@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-11-17T09:04:41.830Z",
+  "updatedAt": "2026-11-17T18:29:31.143Z",
   "items": [
+    {
+      "id": "free-nasa-6ce8a8b2fa0cf8c5",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Invites Media, Public to View Roman Telescope’s First Images",
+      "summary": "NASA will release the first images from its Nancy Grace Roman Space Telescope during a live stream from the American Geophysical Union (AGU) Annual Meeting in San Francisco at 3:30 p.m. EST (12:30 p.m. PST) Monday, Dec. 7. The images will showcase the unique scientific capabilities of Roman, which will soon capture deep, panoramic, never-before-seen […]",
+      "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-view-roman-telescopes-first-images/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-17T17:00:29.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-globalvoices-de32183e0b8a187c",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Jude Pierre Louis",
+      "title": "Street medicine vendors are dangerously filling Haiti’s healthcare gaps",
+      "summary": "Street medicine vendors have no professional medical training — and the drugs they sell in questionable conditions on the street pose a serious danger to consumers’ lives.",
+      "url": "https://globalvoices.org/2026/11/17/street-medicine-vendors-are-dangerously-filling-haitis-healthcare-gaps/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-17T15:19:06.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-globalvoices-804dd3e475584dcd",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Mong Palatino",
+      "title": "In win against impunity, Indonesian court orders the reform of Military Justice Law",
+      "summary": "\"Justice for civilian victims of military abuses shouldn’t be blocked by an unfair military court system.\"",
+      "url": "https://globalvoices.org/2026/11/17/in-win-against-impunity-indonesian-court-orders-the-reform-of-military-justice-law/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-17T06:55:29.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-9cb60120da34165e",
       "sourceId": "nasa",
@@ -135,48 +180,18 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-71b5ee627a401655",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Sandra Tuombouh",
-      "title": "Can regenerative school gardens strengthen food security in Cameroon?",
-      "summary": "Students in Cameroon’s North West Region are managing school gardens and growing food using regenerative practices such as minimal tillage, composting, organic manure and fruit-tree grafting.",
-      "url": "https://globalvoices.org/2026/11/12/can-regenerative-school-gardens-strengthen-food-security-in-cameroon/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-12T07:27:40.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-9cbb3aced155e6ed",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Guest Contributor",
-      "title": "Justice is the infrastructure the world keeps forgetting",
-      "summary": "Physical infrastructure cannot deliver its promised benefits when the institutions and mechanisms for resolving grievances are inaccessible, ineffective or distrusted.",
-      "url": "https://globalvoices.org/2026/11/11/justice-is-the-infrastructure-the-world-keeps-forgetting/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-11T09:03:35.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
     {
       "sourceId": "globalvoices",
-      "ok": false,
+      "ok": true,
       "items": 10
     },
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 2
     }
   ]
 }
