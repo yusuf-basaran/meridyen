@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-18T09:03:15.327Z",
+  "updatedAt": "2026-11-18T17:58:03.731Z",
   "items": [
+    {
+      "id": "free-globalvoices-e44953c7251e2664",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Hong Kong Free Press",
+      "title": "‘Who will respond?’: Jailed Hong Kong pro-democracy activist Joshua Wong fears being forgotten amid 10-year sentence",
+      "summary": "The 30-year-old pro-democracy activist has spent almost six years behind bars and was set for release in January 2026, until authorities charged him with conspiring to foreign collusion last year.",
+      "url": "https://globalvoices.org/2026/11/18/who-will-respond-jailed-hong-kong-pro-democracy-activist-joshua-wong-fears-being-forgotten-amid-10-year-sentence/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-18T11:48:15.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-27308fbc213f504e",
       "sourceId": "globalvoices",
@@ -150,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-f27d3677b86c325d",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Janine Mendes-Franco",
-      "title": "Trinbagonian Jason Jones wins landmark Privy Council judgement deeming ‘buggery laws’ unconstitutional",
-      "summary": "After a decade-long legal battle, the Privy Council has overturned a 2025 Court of Appeal decision to keep Trinidad and Tobago’s colonial-era “buggery law” on the books.",
-      "url": "https://globalvoices.org/2026/11/12/trinbagonian-jason-jones-wins-landmark-privy-council-judgement-deeming-buggery-laws-unconstitutional/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:00:11.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -175,7 +175,7 @@
     },
     {
       "sourceId": "nasa",
-      "ok": true,
+      "ok": false,
       "items": 1
     }
   ]
