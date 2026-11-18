@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-17T18:29:31.143Z",
+  "updatedAt": "2026-11-18T01:15:55.230Z",
   "items": [
+    {
+      "id": "free-nasa-f7f34b27e3ae136b",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Lauren E. Low",
+      "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
+      "summary": "NASA and its international partners are set to receive scientific research samples and hardware as a SpaceX Dragon spacecraft departs the International Space Station no earlier than Wednesday, Nov. 18, for its return to Earth. Pending weather conditions, the Dragon spacecraft will undock from the Harmony module’s space-facing port at 11:05 a.m. EST, following a […]",
+      "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-17T19:16:22.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
     {
       "id": "free-nasa-6ce8a8b2fa0cf8c5",
       "sourceId": "nasa",
@@ -45,21 +60,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-9cb60120da34165e",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Lauren E. Low",
-      "title": "NASA Receives 16th Consecutive ‘Clean’ Financial Audit Opinion",
-      "summary": "For the 16th consecutive year, NASA has received an unmodified, or “clean,” opinion from an external auditor on its fiscal year 2026 financial statements. The rating is the best possible audit opinion, certifying that NASA’s financial statements conform with Generally Accepted Accounting Principles for federal agencies and accurately present the agency’s financial position. “Our responsibility […]",
-      "url": "https://www.nasa.gov/news-release/nasa-receives-16th-consecutive-clean-financial-audit-opinion/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-16T20:30:40.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-fdda3fc0daf66cf9",
