@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-18T01:15:55.230Z",
+  "updatedAt": "2026-11-18T09:03:15.327Z",
   "items": [
+    {
+      "id": "free-globalvoices-27308fbc213f504e",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Forus",
+      "title": "Diversifying funding was supposed to protect civil society: It did not",
+      "summary": "A survey of 195 organisations across more than 68 countries shows how the global aid retreat is hitting organizations that spent years building diverse funding streams — and why the crisis goes far beyond money.",
+      "url": "https://globalvoices.org/2026/11/18/diversifying-funding-was-supposed-to-protect-civil-society-it-did-not/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-18T02:40:58.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-f7f34b27e3ae136b",
       "sourceId": "nasa",
@@ -12,21 +27,6 @@
       "category": "Bilim",
       "language": "en",
       "publishedAt": "2026-11-17T19:16:22.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
-    },
-    {
-      "id": "free-nasa-6ce8a8b2fa0cf8c5",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Invites Media, Public to View Roman Telescope’s First Images",
-      "summary": "NASA will release the first images from its Nancy Grace Roman Space Telescope during a live stream from the American Geophysical Union (AGU) Annual Meeting in San Francisco at 3:30 p.m. EST (12:30 p.m. PST) Monday, Dec. 7. The images will showcase the unique scientific capabilities of Roman, which will soon capture deep, panoramic, never-before-seen […]",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-view-roman-telescopes-first-images/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-17T17:00:29.000Z",
       "licenseName": "NASA haber kullanım koşulları",
       "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
@@ -165,21 +165,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-188e708e4f83f2f1",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Gina Yauri",
-      "title": "Ecuadorian youth unite against neoliberal models and state violence",
-      "summary": "Thousands of Ecuadorian students have taken to the streets to reject President Noboa’s temporary job plans, demanding permanent solutions for public healthcare, education funding, and rising insecurity.",
-      "url": "https://globalvoices.org/2026/11/12/ecuadorian-youth-unite-against-neoliberal-models-and-state-violence/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-12T14:00:33.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -191,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 1
     }
   ]
 }
