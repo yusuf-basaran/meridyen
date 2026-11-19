@@ -1,6 +1,36 @@
 {
-  "updatedAt": "2026-11-19T00:15:24.253Z",
+  "updatedAt": "2026-11-19T17:17:39.352Z",
   "items": [
+    {
+      "id": "free-nasa-b71681db2cca441f",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
+      "summary": "NASA’s Voyager 1 probe, humanity’s farthest-flying spacecraft, has reached one light-day from Earth, after more than 49 years of constant travel. A light-day is the distance light travels in 24 hours, equaling about 16.1 billion miles (25.9 billion kilometers). The spacecraft achieved the milestone at 2:16 a.m. PST (5:16 a.m. EST) Nov. 18. Voyager team […]",
+      "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-19T14:31:15.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    },
+    {
+      "id": "free-globalvoices-70143b052a4b81a2",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Daria Dergacheva",
+      "title": "Family stories keep alive Georgia’s democratic past and the memory of Soviet repression",
+      "summary": "“Family stories can open up broader conversations about democracy, human rights, repression, and civic responsibility”",
+      "url": "https://globalvoices.org/2026/11/19/sharing-family-histories-about-a-region-in-georgias-democratic-past-and-soviet-repression/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-19T08:00:05.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-b1857d4ba9390038",
       "sourceId": "globalvoices",
@@ -15,6 +45,36 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-globalvoices-f77cb7cb0fed7a48",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Announcements",
+      "title": "Support Global Voices’ December Spotlight: Digital Communities",
+      "summary": "In this month’s spotlight, Global Voices, in partnership with Ranking Digital Rights, will explore the multiverse of digital communities — starting with our own.",
+      "url": "https://globalvoices.org/2026/11/19/support-global-voices-december-spotlight-digital-communities/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
+    {
+      "id": "free-nasa-162c5c6a72fe29aa",
+      "sourceId": "nasa",
+      "sourceName": "NASA",
+      "author": "Jessica Taveau",
+      "title": "NASA Sets Coverage for Northrop Grumman CRS-25 Launch, Prelaunch",
+      "summary": "NASA, Northrop Grumman, and SpaceX are targeting no earlier than 10:47 a.m. EST, Sunday, Nov. 29, for the next launch delivering science investigations, supplies, and equipment to the International Space Station. The agency also will hold a prelaunch media teleconference on Monday, Nov. 23. Filled with approximately 11,000 pounds of cargo, the Northrop Grumman Cygnus […]",
+      "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-northrop-grumman-crs-25-launch-prelaunch/",
+      "category": "Bilim",
+      "language": "en",
+      "publishedAt": "2026-11-18T22:19:17.000Z",
+      "licenseName": "NASA haber kullanım koşulları",
+      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-2c6909ee8a217dac",
@@ -60,21 +120,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-f7f34b27e3ae136b",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Lauren E. Low",
-      "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
-      "summary": "NASA and its international partners are set to receive scientific research samples and hardware as a SpaceX Dragon spacecraft departs the International Space Station no earlier than Wednesday, Nov. 18, for its return to Earth. Pending weather conditions, the Dragon spacecraft will undock from the Harmony module’s space-facing port at 11:05 a.m. EST, following a […]",
-      "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-17T19:16:22.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-de32183e0b8a187c",
@@ -135,36 +180,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-d5d04040527d6b17",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Rebecca Cluett",
-      "title": "Madagascar aims to support biodiversity by protecting marine areas",
-      "summary": "At the annual COP17 on biodiversity, Madagascar confirmed its commitment to the 30x30 Global Target and the conservation of its natural heritage.",
-      "url": "https://globalvoices.org/2026/11/15/madagascar-aims-to-support-biodiversity-by-protecting-marine-areas/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-15T08:11:47.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-8a973ac7da5d37d5",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Masudul Zarif",
-      "title": "Learning under trees in the era of AI: The paradox of education in Mozambique",
-      "summary": "Mozambique faces an educational paradox: While the use of artificial intelligence is being debated, thousands of students still learn outdoors, without basic infrastructure or internet access.",
-      "url": "https://globalvoices.org/2026/11/14/learning-under-trees-in-the-era-of-ai-the-paradox-of-education-in-mozambique/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-14T18:39:17.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
     }
   ],
   "sources": [
@@ -175,8 +190,8 @@
     },
     {
       "sourceId": "nasa",
-      "ok": false,
-      "items": 1
+      "ok": true,
+      "items": 2
     }
   ]
 }
