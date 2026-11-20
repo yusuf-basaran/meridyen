@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-20T16:03:25.637Z",
+  "updatedAt": "2026-11-20T22:38:16.904Z",
   "items": [
+    {
+      "id": "free-globalvoices-263194541dc2a29e",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Sydney Allen",
+      "title": "The ongoing efforts to get ecocide recognized at the International Criminal Court",
+      "summary": "For the nations that started this, the stakes are not abstract. They are asking the world to build infrastructure to prosecute and prevent harm that is already happening to them.",
+      "url": "https://globalvoices.org/2026/11/20/the-ongoing-efforts-to-get-ecocide-recognized-at-the-international-criminal-court/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-20T18:05:05.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-80979b58acd78f9c",
       "sourceId": "globalvoices",
@@ -147,21 +162,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-17T06:55:29.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-fdda3fc0daf66cf9",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Masudul Zarif",
-      "title": "Civil society questions decree that could block access to telecommunications networks in Mozambique",
-      "summary": "The telecommunications decree in Mozambique raises serious concerns regarding potential restrictions on fundamental rights, including freedom of expression and access to information during periods of political tension.",
-      "url": "https://globalvoices.org/2026/11/16/civil-society-questions-decree-that-could-block-access-to-telecommunications-networks-in-mozambique/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-16T08:38:21.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
