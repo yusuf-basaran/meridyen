@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-19T17:17:39.352Z",
+  "updatedAt": "2026-11-20T07:00:10.374Z",
   "items": [
+    {
+      "id": "free-globalvoices-80979b58acd78f9c",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Jo Carter",
+      "title": "Why Japan’s anti-hate measures fall short",
+      "summary": "The prevalence of online hate speech is to a large extent related to a lack of effective domestic legislation and human rights education.",
+      "url": "https://globalvoices.org/2026/11/20/why-japans-anti-hate-measures-fall-short/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-nasa-b71681db2cca441f",
       "sourceId": "nasa",
@@ -162,21 +177,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-16T08:38:21.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-1d46b7ff5542e5eb",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Walid El Houri",
-      "title": "Making injustice legal: How Israeli law legitimizes apartheid, genocide and impunity",
-      "summary": "From military courts to closed investigations, Israeli law enforces two systems to maintain an apartheid, and international accountability is being dismantled by sanctions against the courts that uphold international law.",
-      "url": "https://globalvoices.org/2026/11/16/making-injustice-legal-how-israeli-law-legitimizes-apartheid-genocide-and-impunity/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-16T00:00:00.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
