@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T07:00:10.374Z",
+  "updatedAt": "2026-11-20T16:03:25.637Z",
   "items": [
     {
       "id": "free-globalvoices-80979b58acd78f9c",
@@ -75,21 +75,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-162c5c6a72fe29aa",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA Sets Coverage for Northrop Grumman CRS-25 Launch, Prelaunch",
-      "summary": "NASA, Northrop Grumman, and SpaceX are targeting no earlier than 10:47 a.m. EST, Sunday, Nov. 29, for the next launch delivering science investigations, supplies, and equipment to the International Space Station. The agency also will hold a prelaunch media teleconference on Monday, Nov. 23. Filled with approximately 11,000 pounds of cargo, the Northrop Grumman Cygnus […]",
-      "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-northrop-grumman-crs-25-launch-prelaunch/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-18T22:19:17.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-2c6909ee8a217dac",
@@ -191,7 +176,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 2
+      "items": 1
     }
   ]
 }
