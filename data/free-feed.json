@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T22:38:16.904Z",
+  "updatedAt": "2026-11-21T03:54:41.141Z",
   "items": [
     {
       "id": "free-globalvoices-263194541dc2a29e",
@@ -30,21 +30,6 @@
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-nasa-b71681db2cca441f",
-      "sourceId": "nasa",
-      "sourceName": "NASA",
-      "author": "Jessica Taveau",
-      "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
-      "summary": "NASA’s Voyager 1 probe, humanity’s farthest-flying spacecraft, has reached one light-day from Earth, after more than 49 years of constant travel. A light-day is the distance light travels in 24 hours, equaling about 16.1 billion miles (25.9 billion kilometers). The spacecraft achieved the milestone at 2:16 a.m. PST (5:16 a.m. EST) Nov. 18. Voyager team […]",
-      "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
-      "category": "Bilim",
-      "language": "en",
-      "publishedAt": "2026-11-19T14:31:15.000Z",
-      "licenseName": "NASA haber kullanım koşulları",
-      "licenseURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-      "termsURL": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
     },
     {
       "id": "free-globalvoices-70143b052a4b81a2",
@@ -176,7 +161,7 @@
     {
       "sourceId": "nasa",
       "ok": true,
-      "items": 1
+      "items": 0
     }
   ]
 }
