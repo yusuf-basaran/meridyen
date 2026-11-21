@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-21T03:54:41.141Z",
+  "updatedAt": "2026-11-21T12:30:14.790Z",
   "items": [
+    {
+      "id": "free-globalvoices-3d11fb1cb1a53fa6",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Sanjib Chaudhary",
+      "title": "Reclaiming Indigenous culinary histories in Nepal",
+      "summary": "Sanjib Chaudhary of Global Voices caught up with Binti Gurung, a food historian and founder of Natural Roots Foundation, to talk about her work on the food heritage of Nepal.",
+      "url": "https://globalvoices.org/2026/11/21/rereclaiming-indigenous-culinary-histories-in-nepal/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-21T06:12:59.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-263194541dc2a29e",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-17T15:19:06.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-804dd3e475584dcd",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Mong Palatino",
-      "title": "In win against impunity, Indonesian court orders the reform of Military Justice Law",
-      "summary": "\"Justice for civilian victims of military abuses shouldn’t be blocked by an unfair military court system.\"",
-      "url": "https://globalvoices.org/2026/11/17/in-win-against-impunity-indonesian-court-orders-the-reform-of-military-justice-law/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-17T06:55:29.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
