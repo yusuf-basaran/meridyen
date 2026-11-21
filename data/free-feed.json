@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-21T12:30:14.790Z",
+  "updatedAt": "2026-11-21T19:43:54.315Z",
   "items": [
+    {
+      "id": "free-globalvoices-6d100a6de72de8d8",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Cynthia Ebot Takang",
+      "title": "Growing up displaced in Cameroon after ten years of conflict",
+      "summary": "In Buea, children displaced by Cameroon’s armed Anglophone conflict are balancing school with market trading to help their families survive, while years of displacement have interrupted their education, relationships, aspirations.",
+      "url": "https://globalvoices.org/2026/11/21/growing-up-displaced-in-cameroon-after-ten-years-of-conflict/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-21T18:02:14.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-3d11fb1cb1a53fa6",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-18T02:40:58.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-de32183e0b8a187c",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Jude Pierre Louis",
-      "title": "Street medicine vendors are dangerously filling Haiti’s healthcare gaps",
-      "summary": "Street medicine vendors have no professional medical training — and the drugs they sell in questionable conditions on the street pose a serious danger to consumers’ lives.",
-      "url": "https://globalvoices.org/2026/11/17/street-medicine-vendors-are-dangerously-filling-haitis-healthcare-gaps/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-17T15:19:06.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
