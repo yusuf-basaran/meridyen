@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-21T19:43:54.315Z",
+  "updatedAt": "2026-11-22T07:22:58.966Z",
   "items": [
+    {
+      "id": "free-globalvoices-8a79b70e79b0c61f",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Susmita Aryal",
+      "title": "Breaking the silence: Pratishta’s journey from childhood abuse to advocacy",
+      "summary": "Across South Asia, including Nepal, survivors of rape and child sexual abuse face not only violence but also victim-blaming social norms that perpetuate stigma, silence and impunity.",
+      "url": "https://globalvoices.org/2026/11/22/breaking-the-silence-pratishtas-journey-from-childhood-abuse-to-advocacy/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-22T06:10:07.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-6d100a6de72de8d8",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-18T11:48:15.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-27308fbc213f504e",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Forus",
-      "title": "Diversifying funding was supposed to protect civil society: It did not",
-      "summary": "A survey of 195 organisations across more than 68 countries shows how the global aid retreat is hitting organizations that spent years building diverse funding streams — and why the crisis goes far beyond money.",
-      "url": "https://globalvoices.org/2026/11/18/diversifying-funding-was-supposed-to-protect-civil-society-it-did-not/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-18T02:40:58.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
