@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-22T07:22:58.966Z",
+  "updatedAt": "2026-11-23T11:12:11.831Z",
   "items": [
+    {
+      "id": "free-globalvoices-39c25a7b0bdd3156",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Laura",
+      "title": "Nigerien women lose their rights before ever reaching a courtroom",
+      "summary": "Long before reaching any courtroom, women face barriers not only within their families and communities, but also in the resolution of disputes, often over land, inheritance, and child custody.",
+      "url": "https://globalvoices.org/2026/11/23/nigerien-women-lose-their-rights-before-ever-reaching-a-courtroom/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-23T06:45:21.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-8a79b70e79b0c61f",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-18T18:05:21.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-e44953c7251e2664",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Hong Kong Free Press",
-      "title": "‘Who will respond?’: Jailed Hong Kong pro-democracy activist Joshua Wong fears being forgotten amid 10-year sentence",
-      "summary": "The 30-year-old pro-democracy activist has spent almost six years behind bars and was set for release in January 2026, until authorities charged him with conspiring to foreign collusion last year.",
-      "url": "https://globalvoices.org/2026/11/18/who-will-respond-jailed-hong-kong-pro-democracy-activist-joshua-wong-fears-being-forgotten-amid-10-year-sentence/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-18T11:48:15.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
