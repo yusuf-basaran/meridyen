@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-23T22:53:12.017Z",
+  "updatedAt": "2026-11-24T06:54:50.483Z",
   "items": [
+    {
+      "id": "free-globalvoices-5cc417834a276f0f",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Nurbek Bekmurzaev",
+      "title": "In Kyrgyzstan, public meetings with the president turn into a quest to seek justice",
+      "summary": "The message is clear: People have lost all hope of finding justice at the hands of local police and courts.",
+      "url": "https://globalvoices.org/2026/11/24/in-kyrgyzstan-public-meetings-with-the-president-turn-into-a-quest-to-seek-justice/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-24T06:10:50.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-39c25a7b0bdd3156",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-19T00:00:00.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-2c6909ee8a217dac",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "The Hague Institute for Innovation of Law (HiiL)",
-      "title": "An AI chatbot can explain your rights. But can it get you justice?",
-      "summary": "AI could make the law easier to navigate. But the real test is whether it helps people resolve the problems they face, not simply access information about their rights.",
-      "url": "https://globalvoices.org/2026/11/18/an-ai-chatbot-can-explain-your-rights-but-can-it-get-you-justice/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-18T18:05:21.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
