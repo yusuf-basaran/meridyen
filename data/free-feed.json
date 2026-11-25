@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-25T03:00:03.473Z",
+  "updatedAt": "2026-11-25T12:39:04.756Z",
   "items": [
+    {
+      "id": "free-globalvoices-c4e6055ff8aabf39",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Guest Contributor",
+      "title": "Jailed for being poor, forgotten by slow courts in Nigeria, saved by strangers online",
+      "summary": "The Nigerian Correctional Service said that most people in its custody were still waiting for trial. They have not been found guilty of any crime.",
+      "url": "https://globalvoices.org/2026/11/25/jailed-for-being-poor-forgotten-by-slow-courts-in-nigeria-saved-by-strangers-online/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-25T08:33:17.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-5cc417834a276f0f",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-19T00:00:14.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-f77cb7cb0fed7a48",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Global Voices Announcements",
-      "title": "Support Global Voices’ December Spotlight: Digital Communities",
-      "summary": "In this month’s spotlight, Global Voices, in partnership with Ranking Digital Rights, will explore the multiverse of digital communities — starting with our own.",
-      "url": "https://globalvoices.org/2026/11/19/support-global-voices-december-spotlight-digital-communities/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-19T00:00:00.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
