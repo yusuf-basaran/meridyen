@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-25T12:39:04.756Z",
+  "updatedAt": "2026-11-26T14:20:25.526Z",
   "items": [
+    {
+      "id": "free-globalvoices-f75df30ac8ae0b48",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Global Voices Announcements",
+      "title": "Support Global Voices’ January Spotlight: Independent journalism",
+      "summary": "In our January spotlight, Global Voices is celebrating the independent journalism that keeps governments and institutions accountable.",
+      "url": "https://globalvoices.org/2026/11/26/support-global-voices-january-spotlight-independent-journalism/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-26T08:16:21.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-c4e6055ff8aabf39",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-19T08:00:05.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-b1857d4ba9390038",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "In Moldova, teens are learning about democracy and elections through an app",
-      "summary": "VotEDU started off as a civic-education project to help young people understand democracy before they vote for the first time.",
-      "url": "https://globalvoices.org/2026/11/19/in-moldova-teens-are-learning-about-democracy-and-elections-through-an-app/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-19T00:00:14.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
