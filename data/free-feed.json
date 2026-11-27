@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-26T14:20:25.526Z",
+  "updatedAt": "2026-11-27T15:31:35.528Z",
   "items": [
+    {
+      "id": "free-globalvoices-9d59e6aaf9ede178",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Zita Zage",
+      "title": "Who speaks for the voiceless in Tanzania?",
+      "summary": "\"The law guarantees freedom of expression, but people who criticize the government face arrest, intimidation, and, in some cases, alleged abduction.\"",
+      "url": "https://globalvoices.org/2026/11/27/who-speaks-for-the-voiceless-in-tanzania/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-27T07:54:18.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-f75df30ac8ae0b48",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-70143b052a4b81a2",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Daria Dergacheva",
-      "title": "Family stories keep alive Georgia’s democratic past and the memory of Soviet repression",
-      "summary": "“Family stories can open up broader conversations about democracy, human rights, repression, and civic responsibility”",
-      "url": "https://globalvoices.org/2026/11/19/sharing-family-histories-about-a-region-in-georgias-democratic-past-and-soviet-repression/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-19T08:00:05.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
