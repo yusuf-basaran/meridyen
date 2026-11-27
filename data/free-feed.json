@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-11-27T15:31:35.528Z",
+  "updatedAt": "2026-11-27T23:41:48.115Z",
   "items": [
+    {
+      "id": "free-globalvoices-2709d7584e209fa6",
+      "sourceId": "globalvoices",
+      "sourceName": "Global Voices",
+      "author": "Mong Palatino",
+      "title": "International Court of Justice rules Myanmar committed genocide against the Rohingya people",
+      "summary": "\"This verdict brings a sense of healing for me, too. It feels as though one of the chronic diseases Myanmar suffer has finally been named.\"",
+      "url": "https://globalvoices.org/2026/11/27/international-court-of-justice-rules-myanmar-committed-genocide-against-the-rohingya-people/",
+      "category": "Dünya",
+      "language": "en",
+      "publishedAt": "2026-11-27T20:07:43.000Z",
+      "licenseName": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
+    },
     {
       "id": "free-globalvoices-9d59e6aaf9ede178",
       "sourceId": "globalvoices",
@@ -132,21 +147,6 @@
       "category": "Dünya",
       "language": "en",
       "publishedAt": "2026-11-20T18:05:05.000Z",
-      "licenseName": "CC BY 3.0",
-      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-      "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
-    },
-    {
-      "id": "free-globalvoices-80979b58acd78f9c",
-      "sourceId": "globalvoices",
-      "sourceName": "Global Voices",
-      "author": "Jo Carter",
-      "title": "Why Japan’s anti-hate measures fall short",
-      "summary": "The prevalence of online hate speech is to a large extent related to a lack of effective domestic legislation and human rights education.",
-      "url": "https://globalvoices.org/2026/11/20/why-japans-anti-hate-measures-fall-short/",
-      "category": "Dünya",
-      "language": "en",
-      "publishedAt": "2026-11-20T00:00:00.000Z",
       "licenseName": "CC BY 3.0",
       "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
       "termsURL": "https://globalvoices.org/about/global-voices-attribution-policy/"
